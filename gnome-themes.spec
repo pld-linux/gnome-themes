@@ -11,9 +11,9 @@ URL:		http://www.gnome.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gtk2-engines >= 2.2.0
-BuildRequires:	libglade2-devel >= 2.3.11
+BuildRequires:	libglade2-devel >= 1:2.3.1
 BuildRequires:	libtool
-BuildRequires:	intltool >= 0.27.2
+BuildRequires:	intltool >= 0.28
 BuildRequires:	libgnomeui-devel >= 2.5.1
 Requires:	gtk2-engines >= 2.2.0
 Conflicts:	crux-engine
