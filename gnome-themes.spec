@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Themes
 Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/2.3/%{name}-%{version}.tar.bz2
+# Source0-md5: 673d9a8e87108740b9c2f0b8444fedd0
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
