@@ -6,7 +6,6 @@ Release:	1
 License:	GPL
 Group:		Themes
 Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/2.2/%{name}-%{version}.tar.bz2
-Patch0:		%{name}-destdir.patch
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -26,7 +25,6 @@ Domy¶lne motywy dla ¶rodowiska Gnome2.
 
 %prep
 %setup -q
-%patch0 -p1
 
 %build
 %{__libtoolize}
