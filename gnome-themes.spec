@@ -57,7 +57,7 @@ Summary(pl):	Motyw Glider dla ¶rodowiska GNOME 2
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
 Requires:	gnome-icon-theme >= 2.8.0
-Requires:	gtk2-theme-engine-Smooth = %{version}-%{release}
+Requires:	gtk2-engines >= 2.6.0
 
 %description Glider
 Glider theme for GNOME 2 enviroment.
@@ -192,9 +192,9 @@ Summary:	Ocean-Dream theme for GNOME 2 enviroment
 Summary(pl):	Motyw Ocean-Dream dla ¶rodowiska GNOME 2
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
-Requires:	%{name}-LighthouseBlue = %{version}-%{release}
 Requires:	%{name}-Sandwish = %{version}-%{release}
 Requires:	%{name}-Sandy = %{version}-%{release}
+Requires:	gtk2-engines >= 2.6.0
 
 %description Ocean-Dream
 Ocean-Dream theme for GNOME 2 enviroment.
