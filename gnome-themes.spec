@@ -7,14 +7,13 @@ License:	GPL
 Group:		Themes
 Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/2.5/%{name}-%{version}.tar.bz2
 # Source0-md5:	2c9803ca27c8443a4fcb91bd78532fd7
+Patch0:		%{name}-locale-names.patch
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gtk2-engines >= 2.2.0
-BuildRequires:	libglade2-devel >= 1:2.3.2
 BuildRequires:	libtool
 BuildRequires:	intltool >= 0.28
-BuildRequires:	libgnomeui-devel >= 2.5.1
 Requires:	gtk2-engines >= 2.2.0
 Conflicts:	crux-engine
 Conflicts:	crux-theme
@@ -29,6 +28,9 @@ Domy¶lne motywy dla ¶rodowiska GNOME2.
 
 %prep
 %setup -q
+%patch0 -p1
+
+mv po/{no,nb}.po
 
 %build
 glib-gettextize --copy --force
