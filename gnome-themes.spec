@@ -1,5 +1,5 @@
-Summary:	Default themes for Gnome2 enviroment
-Summary(pl):	Domy¶lne motywy dla ¶rodowiska Gnome2
+Summary:	Default themes for GNOME2 enviroment
+Summary(pl):	Domy¶lne motywy dla ¶rodowiska GNOME2
 Name:		gnome-themes
 Version:	2.3.4
 Release:	1
@@ -21,10 +21,10 @@ Conflicts:	gtk2-theme-engine-ThinIce
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Default themes for Gnome2 enviroment.
+Default themes for GNOME2 enviroment.
 
 %description -l pl
-Domy¶lne motywy dla ¶rodowiska Gnome2.
+Domy¶lne motywy dla ¶rodowiska GNOME2.
 
 %prep
 %setup -q
