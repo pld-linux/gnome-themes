@@ -1,20 +1,20 @@
 Summary:	Default themes for Gnome2 enviroment
 Summary(pl):	Domy¶lne motywy dla ¶rodowiska Gnome2
 Name:		gnome-themes
-Version:	2.3.3
+Version:	2.3.4
 Release:	1
 License:	GPL
 Group:		Themes
 Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/2.3/%{name}-%{version}.tar.bz2
-# Source0-md5:	89bd27f6850b07d898e1c66345d39d80
+# Source0-md5:	21afbf71105d2d5b38f8e3d3250ae950
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gtk2-engines >= 2.2.0
-BuildRequires:	libglade2-devel
+BuildRequires:	libglade2-devel >= 2.0.1
 BuildRequires:	libtool
-BuildRequires:	intltool >= 0.27.1
-BuildRequires:	libgnomeui-devel >= 2.3.6
+BuildRequires:	intltool >= 0.27.2
+BuildRequires:	libgnomeui-devel >= 2.3.7
 Conflicts:	crux-engine
 Conflicts:	crux-theme
 Conflicts:	gtk2-theme-engine-ThinIce
