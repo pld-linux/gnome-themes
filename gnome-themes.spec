@@ -9,7 +9,7 @@ Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/2.2/%{name}-%{version}.t
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	gtk2-engines
+BuildRequires:	gtk2-engines >= 2.2.0
 BuildRequires:	gtk2-theme-engine-ThinIce >= 2.0.2
 BuildRequires:	libglade2-devel
 BuildRequires:	libtool
