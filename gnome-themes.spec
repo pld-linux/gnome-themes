@@ -1,13 +1,14 @@
 Summary:	Default themes for GNOME2 enviroment
 Summary(pl):	Domy¶lne motywy dla ¶rodowiska GNOME2
 Name:		gnome-themes
-Version:	2.7.90.1
+Version:	2.7.91
 Release:	1
 License:	GPL
 Group:		Themes
 Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/2.7/%{name}-%{version}.tar.bz2
-# Source0-md5:	5557550ee571a5e5f8c5bc9e4240d493
+# Source0-md5:	d1c2a7d0d421681fb0ce37efdb148122
 Patch0:		%{name}-locale-names.patch
+Patch1:		%{name}-install.patch 
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -29,8 +30,9 @@ Domy¶lne motywy dla ¶rodowiska GNOME2.
 %prep
 %setup -q
 %patch0 -p1
+%patch1 -p1
 
-mv po/{no,nb}.po
+rm po/no.po
 
 %build
 glib-gettextize --copy --force
