@@ -1,12 +1,12 @@
 Summary:	Default themes for GNOME2 enviroment
 Summary(pl):	Domy¶lne motywy dla ¶rodowiska GNOME2
 Name:		gnome-themes
-Version:	2.6.2
+Version:	2.6.3
 Release:	1
 License:	GPL
 Group:		Themes
 Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/2.6/%{name}-%{version}.tar.bz2
-# Source0-md5:	4aae39232d77e1497f3180202b501adf
+# Source0-md5:	dfaf15f973e7ed91459b8ad0ca368839
 Patch0:		%{name}-locale-names.patch
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf
