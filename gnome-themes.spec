@@ -1,12 +1,12 @@
 Summary:	Default themes for GNOME2 enviroment
 Summary(pl):	Domy¶lne motywy dla ¶rodowiska GNOME2
 Name:		gnome-themes
-Version:	2.8.1
+Version:	2.8.2
 Release:	1
 License:	GPL
 Group:		Themes
 Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/2.8/%{name}-%{version}.tar.bz2
-# Source0-md5:	43042549347d67a844f986acd9e6bc3d
+# Source0-md5:	822899efe7170ca59e04144d94d85741
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
