@@ -1,12 +1,12 @@
 Summary:	Default themes for GNOME2 enviroment
 Summary(pl):	Domy¶lne motywy dla ¶rodowiska GNOME2
 Name:		gnome-themes
-Version:	2.9.90
+Version:	2.9.92
 Release:	1
 License:	GPL
 Group:		Themes
-Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/2.9/%{name}-%{version}.tar.bz2
-# Source0-md5:	8874ce239eb6069699f89821f3a059a7
+Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-themes/2.9/%{name}-%{version}.tar.bz2
+# Source0-md5:	c542df3f8a0d6807a6855340be7aa0f1
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf >= 2.52
 BuildRequires:	automake
