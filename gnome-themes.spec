@@ -13,6 +13,8 @@ BuildRequires:	gtk2-engines >= 2.2.0
 BuildRequires:	gtk2-theme-engine-ThinIce >= 2.0.2
 BuildRequires:	libglade2-devel
 BuildRequires:	libtool
+BuildRequires:  intltool >= 0.25
+BuildRequires:  libgnomeui-devel >= 2.2.0.1
 Conflicts:	crux-engine
 Conflicts:	crux-theme
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
