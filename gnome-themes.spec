@@ -1,14 +1,14 @@
 Summary:	Default themes for GNOME2 enviroment
 Summary(pl):	Domy¶lne motywy dla ¶rodowiska GNOME2
 Name:		gnome-themes
-Version:	2.8.2
-Release:	2
+Version:	2.9.90
+Release:	1
 License:	GPL
 Group:		Themes
-Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/2.8/%{name}-%{version}.tar.bz2
-# Source0-md5:	822899efe7170ca59e04144d94d85741
+Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/2.9/%{name}-%{version}.tar.bz2
+# Source0-md5:	8874ce239eb6069699f89821f3a059a7
 URL:		http://www.gnome.org/
-BuildRequires:	autoconf
+BuildRequires:	autoconf >= 2.52
 BuildRequires:	automake
 BuildRequires:	gtk2-engines >= 1:2.6.0-1
 BuildRequires:	libtool
@@ -16,7 +16,6 @@ BuildRequires:	intltool >= 0.28
 Requires:	gtk2-engines >= 1:2.6.0-1
 Conflicts:	crux-engine
 Conflicts:	crux-theme
-Conflicts:	gtk2-theme-engine-ThinIce
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -30,7 +29,7 @@ Summary:	Crux theme for GNOME 2 enviroment
 Summary(pl):	Motyw Crux dla ¶rodowiska GNOME 2
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.8.0
+Requires:	gnome-icon-theme >= 2.9.91
 
 %description Crux
 Crux theme for GNOME 2 enviroment.
@@ -43,7 +42,7 @@ Summary:	Flat-Blue theme for GNOME 2 enviroment
 Summary(pl):	Motyw Flat-Blue dla ¶rodowiska GNOME 2
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.8.0
+Requires:	gnome-icon-theme >= 2.9.91
 
 %description Flat-Blue
 Flat-Blue theme for GNOME 2 enviroment.
@@ -56,7 +55,7 @@ Summary:	Glider theme for GNOME 2 enviroment
 Summary(pl):	Motyw Glider dla ¶rodowiska GNOME 2
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.8.0
+Requires:	gnome-icon-theme >= 2.9.91
 Requires:	gtk2-engines >= 2.6.0
 
 %description Glider
@@ -85,7 +84,7 @@ Summary(pl):	Motyw HighContrast dla ¶rodowiska GNOME 2
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
 Requires:	%{name}-HighContrastLargePrint = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.8.0
+Requires:	gnome-icon-theme >= 2.9.91
 
 %description HighContrast
 HighContrast theme for GNOME 2 enviroment.
@@ -99,7 +98,7 @@ Summary(pl):	Motyw HighContrastInverse dla ¶rodowiska GNOME 2
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
 Requires:	%{name}-HighContrastLargePrintInverse = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.8.0
+Requires:	gnome-icon-theme >= 2.9.91
 
 %description HighContrastInverse
 HighContrastInverse theme for GNOME 2 enviroment.
@@ -113,7 +112,7 @@ Summary(pl):	Motyw HighContrastLargePrint dla ¶rodowiska GNOME 2
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
 Requires:	%{name}-HighContrast = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.8.0
+Requires:	gnome-icon-theme >= 2.9.91
 
 %description HighContrastLargePrint
 HighContrastLargePrint theme for GNOME 2 enviroment.
@@ -126,7 +125,7 @@ Summary:	HighContrastLargePrintInverse theme for GNOME 2 enviroment
 Summary(pl):	Motyw HighContrastLargePrintInverse dla ¶rodowiska GNOME 2
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.8.0
+Requires:	gnome-icon-theme >= 2.9.91
 
 %description HighContrastLargePrintInverse
 HighContrastLargePrintInverse theme for GNOME 2 enviroment.
@@ -139,7 +138,7 @@ Summary:	LargePrint theme for GNOME 2 enviroment
 Summary(pl):	Motyw LargePrint dla ¶rodowiska GNOME 2
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.8.0
+Requires:	gnome-icon-theme >= 2.9.91
 
 %description LargePrint
 LargePrint theme for GNOME 2 enviroment.
@@ -153,7 +152,7 @@ Summary(pl):	Motyw LowContrast dla ¶rodowiska GNOME 2
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
 Requires:	%{name}-LowContrastLargePrint = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.8.0
+Requires:	gnome-icon-theme >= 2.9.91
 
 %description LowContrast
 LowContrast theme for GNOME 2 enviroment.
@@ -166,7 +165,7 @@ Summary:	LowContrastLargePrint theme for GNOME 2 enviroment
 Summary(pl):	Motyw LowContrastLargePrint dla ¶rodowiska GNOME 2
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.8.0
+Requires:	gnome-icon-theme >= 2.9.91
 
 %description LowContrastLargePrint
 LowContrastLargePrint theme for GNOME 2 enviroment.
@@ -219,7 +218,7 @@ Summary:	Sandy theme for GNOME 2 enviroment
 Summary(pl):	Motyw Sandy dla ¶rodowiska GNOME 2
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.8.0
+Requires:	gnome-icon-theme >= 2.9.91
 
 %description Sandy
 Sandy theme for GNOME 2 enviroment.
@@ -232,7 +231,7 @@ Summary:	Simple theme for GNOME 2 enviroment
 Summary(pl):	Motyw Simple dla ¶rodowiska GNOME 2
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.8.0
+Requires:	gnome-icon-theme >= 2.9.91
 
 %description Simple
 Simple theme for GNOME 2 enviroment.
@@ -258,7 +257,7 @@ Summary(pl):	Motyw Smokey-Blue dla ¶rodowiska GNOME 2
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
 Requires:	%{name}-Smokey = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.8.0
+Requires:	gnome-icon-theme >= 2.9.91
 
 %description Smokey-Blue
 Smokey-Blue theme for GNOME 2 enviroment.
@@ -271,7 +270,7 @@ Summary:	Smokey-Red theme for GNOME 2 enviroment
 Summary(pl):	Motyw Smokey-Red dla ¶rodowiska GNOME 2
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.8.0
+Requires:	gnome-icon-theme >= 2.9.91
 
 %description Smokey-Red
 Smokey-Red theme for GNOME 2 enviroment.
@@ -284,7 +283,7 @@ Summary:	Traditional theme for GNOME 2 enviroment
 Summary(pl):	Motyw Traditional dla ¶rodowiska GNOME 2
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.8.0
+Requires:	gnome-icon-theme >= 2.9.91
 
 %description Traditional
 Traditional theme for GNOME 2 enviroment.
