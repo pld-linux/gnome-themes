@@ -1,5 +1,5 @@
 Summary:	Default themes for Gnome2 enviroment
-Summary(pl):	motywy dla ¶rodowiska Gnome2
+Summary(pl):	Domy¶lne motywy dla ¶rodowiska Gnome2
 Name:		gnome-themes
 Version:	2.2
 Release:	1
@@ -13,6 +13,7 @@ BuildRequires:	automake
 BuildRequires:	gtk2-engines
 BuildRequires:	gtk2-theme-engine-ThinIce >= 2.0.2
 BuildRequires:	libglade2-devel
+BuildRequires:	libtool
 Conflicts:	crux-engine
 Conflicts:	crux-theme
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
