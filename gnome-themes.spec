@@ -1,7 +1,7 @@
 Summary:	Default themes for Gnome2 enviroment
 Summary(pl):	motywy dla ¶rodowiska Gnome2
 Name:		gnome-themes
-Version:	2.1.99
+Version:	2.1.100
 Release:	1
 License:	GPL
 Group:		Themes
