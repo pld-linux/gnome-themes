@@ -2,7 +2,7 @@ Summary:	Default themes for GNOME2 enviroment
 Summary(pl):	Domy¶lne motywy dla ¶rodowiska GNOME2
 Name:		gnome-themes
 Version:	2.8.2
-Release:	1
+Release:	2
 License:	GPL
 Group:		Themes
 Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/2.8/%{name}-%{version}.tar.bz2
@@ -10,10 +10,10 @@ Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/2.8/%{name}-%{version}.t
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	gtk2-engines >= 2.2.0-3
+BuildRequires:	gtk2-engines >= 1:2.6.0-1
 BuildRequires:	libtool
 BuildRequires:	intltool >= 0.28
-Requires:	gtk2-engines >= 2.2.0-3
+Requires:	gtk2-engines >= 1:2.6.0-1
 Conflicts:	crux-engine
 Conflicts:	crux-theme
 Conflicts:	gtk2-theme-engine-ThinIce
@@ -30,7 +30,7 @@ Summary:	Crux theme for GNOME 2 enviroment
 Summary(pl):	Motyw Crux dla ¶rodowiska GNOME 2
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.7.90
+Requires:	gnome-icon-theme >= 2.8.0
 
 %description Crux
 Crux theme for GNOME 2 enviroment.
@@ -43,7 +43,7 @@ Summary:	Flat-Blue theme for GNOME 2 enviroment
 Summary(pl):	Motyw Flat-Blue dla ¶rodowiska GNOME 2
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.7.90
+Requires:	gnome-icon-theme >= 2.8.0
 
 %description Flat-Blue
 Flat-Blue theme for GNOME 2 enviroment.
@@ -56,7 +56,7 @@ Summary:	Glider theme for GNOME 2 enviroment
 Summary(pl):	Motyw Glider dla ¶rodowiska GNOME 2
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.7.90
+Requires:	gnome-icon-theme >= 2.8.0
 Requires:	gtk2-theme-engine-Smooth = %{version}-%{release}
 
 %description Glider
@@ -85,7 +85,7 @@ Summary(pl):	Motyw HighContrast dla ¶rodowiska GNOME 2
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
 Requires:	%{name}-HighContrastLargePrint = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.7.90
+Requires:	gnome-icon-theme >= 2.8.0
 
 %description HighContrast
 HighContrast theme for GNOME 2 enviroment.
@@ -99,7 +99,7 @@ Summary(pl):	Motyw HighContrastInverse dla ¶rodowiska GNOME 2
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
 Requires:	%{name}-HighContrastLargePrintInverse = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.7.90
+Requires:	gnome-icon-theme >= 2.8.0
 
 %description HighContrastInverse
 HighContrastInverse theme for GNOME 2 enviroment.
@@ -113,7 +113,7 @@ Summary(pl):	Motyw HighContrastLargePrint dla ¶rodowiska GNOME 2
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
 Requires:	%{name}-HighContrast = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.7.90
+Requires:	gnome-icon-theme >= 2.8.0
 
 %description HighContrastLargePrint
 HighContrastLargePrint theme for GNOME 2 enviroment.
@@ -126,7 +126,7 @@ Summary:	HighContrastLargePrintInverse theme for GNOME 2 enviroment
 Summary(pl):	Motyw HighContrastLargePrintInverse dla ¶rodowiska GNOME 2
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.7.90
+Requires:	gnome-icon-theme >= 2.8.0
 
 %description HighContrastLargePrintInverse
 HighContrastLargePrintInverse theme for GNOME 2 enviroment.
@@ -139,7 +139,7 @@ Summary:	LargePrint theme for GNOME 2 enviroment
 Summary(pl):	Motyw LargePrint dla ¶rodowiska GNOME 2
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.7.90
+Requires:	gnome-icon-theme >= 2.8.0
 
 %description LargePrint
 LargePrint theme for GNOME 2 enviroment.
@@ -147,25 +147,13 @@ LargePrint theme for GNOME 2 enviroment.
 %description LargePrint -l pl
 Motyw LargePrint dla ¶rodowiska GNOME 2.
 
-%package LighthouseBlue
-Summary:	LighthouseBlue theme for GNOME 2 enviroment
-Summary(pl):	Motyw LighthouseBlue dla ¶rodowiska GNOME 2
-Group:		Themes
-Requires:	%{name} = %{version}-%{release}
-
-%description LighthouseBlue
-LighthouseBlue theme for GNOME 2 enviroment.
-
-%description LighthouseBlue -l pl
-Motyw LighthouseBlue dla ¶rodowiska GNOME 2.
-
 %package LowContrast
 Summary:	LowContrast theme for GNOME 2 enviroment
 Summary(pl):	Motyw LowContrast dla ¶rodowiska GNOME 2
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
 Requires:	%{name}-LowContrastLargePrint = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.7.90
+Requires:	gnome-icon-theme >= 2.8.0
 
 %description LowContrast
 LowContrast theme for GNOME 2 enviroment.
@@ -178,7 +166,7 @@ Summary:	LowContrastLargePrint theme for GNOME 2 enviroment
 Summary(pl):	Motyw LowContrastLargePrint dla ¶rodowiska GNOME 2
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.7.90
+Requires:	gnome-icon-theme >= 2.8.0
 
 %description LowContrastLargePrint
 LowContrastLargePrint theme for GNOME 2 enviroment.
@@ -231,7 +219,7 @@ Summary:	Sandy theme for GNOME 2 enviroment
 Summary(pl):	Motyw Sandy dla ¶rodowiska GNOME 2
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.7.90
+Requires:	gnome-icon-theme >= 2.8.0
 
 %description Sandy
 Sandy theme for GNOME 2 enviroment.
@@ -244,7 +232,7 @@ Summary:	Simple theme for GNOME 2 enviroment
 Summary(pl):	Motyw Simple dla ¶rodowiska GNOME 2
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.7.90
+Requires:	gnome-icon-theme >= 2.8.0
 
 %description Simple
 Simple theme for GNOME 2 enviroment.
@@ -270,7 +258,7 @@ Summary(pl):	Motyw Smokey-Blue dla ¶rodowiska GNOME 2
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
 Requires:	%{name}-Smokey = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.7.90
+Requires:	gnome-icon-theme >= 2.8.0
 
 %description Smokey-Blue
 Smokey-Blue theme for GNOME 2 enviroment.
@@ -283,7 +271,7 @@ Summary:	Smokey-Red theme for GNOME 2 enviroment
 Summary(pl):	Motyw Smokey-Red dla ¶rodowiska GNOME 2
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.7.90
+Requires:	gnome-icon-theme >= 2.8.0
 
 %description Smokey-Red
 Smokey-Red theme for GNOME 2 enviroment.
@@ -291,41 +279,18 @@ Smokey-Red theme for GNOME 2 enviroment.
 %description Smokey-Red -l pl
 Motyw Smokey-Red dla ¶rodowiska GNOME 2.
 
-%package ThinIce
-Summary:	ThinIce theme for GNOME 2 enviroment
-Summary(pl):	Motyw ThinIce dla ¶rodowiska GNOME 2
-Group:		Themes
-Requires:	%{name} = %{version}-%{release}
-
-%description ThinIce
-ThinIce theme for GNOME 2 enviroment.
-
-%description ThinIce -l pl
-Motyw ThinIce dla ¶rodowiska GNOME 2.
-
 %package Traditional
 Summary:	Traditional theme for GNOME 2 enviroment
 Summary(pl):	Motyw Traditional dla ¶rodowiska GNOME 2
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.7.90
+Requires:	gnome-icon-theme >= 2.8.0
 
 %description Traditional
 Traditional theme for GNOME 2 enviroment.
 
 %description Traditional -l pl
 Motyw Traditional dla ¶rodowiska GNOME 2.
-
-%package -n gtk2-theme-engine-Smooth
-Summary:        GTK+2 Smooth theme engine
-Summary(pl):    Silnik Smooth dla GTK+2
-Group:          Themes
-
-%description -n gtk2-theme-engine-Smooth
-GTK+2 Smooth theme engine.
-
-%description -n gtk2-theme-engine-Smooth -l pl
-Silnik Smooth dla GTK+2.
 
 %prep
 %setup -q
@@ -353,22 +318,21 @@ rm -r $RPM_BUILD_ROOT%{_datadir}/locale/no
 
 %find_lang %{name}
 
-# no *.la for gtk engine modules
-rm -f $RPM_BUILD_ROOT%{_libdir}/gtk-2.0/2.*/engines/lib*.la
+# all libs are in gtk2-engines now
+rm -rf $RPM_BUILD_ROOT%{_libdir}
+# eazel-engine is in gtk2-engines too
+rm -rf $RPM_BUILD_ROOT%{_datadir}/eazel-engine
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/gtk-2.0/2.*/engines/lib*.so
-%exclude %{_libdir}/gtk-2.0/2.*/engines/libsmooth.so
-%{_datadir}/eazel-engine
 
 %files Crux
 %defattr(644,root,root,755)
 %{_datadir}/icons/Crux
-%{_datadir}/themes/Crux
+%{_datadir}/themes/Crux/index.theme
 
 %files Flat-Blue
 %defattr(644,root,root,755)
@@ -407,10 +371,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/icons/LargePrint
 %{_datadir}/themes/LargePrint
 
-%files LighthouseBlue
-%defattr(644,root,root,755)
-%{_datadir}/themes/LighthouseBlue
-
 %files LowContrast
 %defattr(644,root,root,755)
 %{_datadir}/icons/LowContrast
@@ -423,7 +383,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %files Mist
 %defattr(644,root,root,755)
-%{_datadir}/themes/Mist
+%{_datadir}/themes/Mist/metacity-1
+%{_datadir}/themes/Mist/index.theme
 
 %files Ocean-Dream
 %defattr(644,root,root,755)
@@ -454,14 +415,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %{_datadir}/icons/Smokey-Red
 
-%files ThinIce
-%defattr(644,root,root,755)
-%{_datadir}/themes/ThinIce
-
 %files Traditional
 %defattr(644,root,root,755)
 %{_datadir}/themes/Traditional
-
-%files -n gtk2-theme-engine-Smooth
-%defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/gtk-2.0/2.*/engines/libsmooth.so
