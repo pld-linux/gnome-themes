@@ -47,13 +47,15 @@ rm -rf $RPM_BUILD_ROOT
 
 %find_lang %{name}
 
+# no *.la for gtk engine modules
+rm -f $RPM_BUILD_ROOT%{_libdir}/gtk-2.0/2.*/engines/lib*.la
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/gtk-2.0/2.*/engines/lib*.so
-%{_libdir}/gtk-2.0/2.*/engines/lib*.la
 %{_datadir}/eazel-engine
 %{_datadir}/icons/*
 %{_datadir}/themes/*
