@@ -1,7 +1,7 @@
 Summary:	Default themes for Gnome2 enviroment
 Summary(pl):	Domy¶lne motywy dla ¶rodowiska Gnome2
 Name:		gnome-themes
-Version:	2.3.0
+Version:	2.3.1
 Release:	1
 License:	GPL
 Group:		Themes
