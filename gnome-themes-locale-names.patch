@@ -1,0 +1,12 @@
+diff -urN gnome-themes-2.6.0.orig/configure.in gnome-themes-2.6.0/configure.in
+--- gnome-themes-2.6.0.orig/configure.in	2004-03-22 22:48:13.939983744 +0100
++++ gnome-themes-2.6.0/configure.in	2004-03-22 22:48:29.781575456 +0100
+@@ -63,7 +63,7 @@
+ ### Icon sizes for all large print themes
+ 
+ 
+-ALL_LINGUAS="am ar az be bg bn ca cs cy da de el en_CA en_GB es et eu fa fi fr ga he hi hr hu id is it ja ko li lt lv mk ml mn ms nl no pl pt pt_BR ro ru sk sl sq sr sr@Latn sv th tr uk vi wa zh_CN zh_TW"
++ALL_LINGUAS="am ar az be bg bn ca cs cy da de el en_CA en_GB es et eu fa fi fr ga he hi hr hu id is it ja ko li lt lv mk ml mn ms nb nl pl pt pt_BR ro ru sk sl sq sr sr@Latn sv th tr uk vi wa zh_CN zh_TW"
+ AM_GLIB_GNU_GETTEXT
+ 
+ LARGEPRINT_DND="48,48"
