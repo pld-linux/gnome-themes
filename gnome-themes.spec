@@ -1,21 +1,20 @@
 Summary:	Default themes for GNOME2 enviroment
 Summary(pl):	Domy¶lne motywy dla ¶rodowiska GNOME2
 Name:		gnome-themes
-Version:	2.4.1
+Version:	2.6.0
 Release:	1
 License:	GPL
 Group:		Themes
-Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/2.4/%{name}-%{version}.tar.bz2
-# Source0-md5:	304237994a5bdd8b89628f4387cd0d10
+Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/2.6/%{name}-%{version}.tar.bz2
+# Source0-md5:	17817f602713b9ac8ebaff9a7f0cb996
+Patch0:		%{name}-locale-names.patch
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	gtk2-engines >= 2.2.0
-BuildRequires:	libglade2-devel >= 2.0.1
+BuildRequires:	gtk2-engines >= 2.2.0-3
 BuildRequires:	libtool
-BuildRequires:	intltool >= 0.27.2
-BuildRequires:	libgnomeui-devel >= 2.4.0
-Requires:	gtk2-engines >= 2.2.0
+BuildRequires:	intltool >= 0.28
+Requires:	gtk2-engines >= 2.2.0-3
 Conflicts:	crux-engine
 Conflicts:	crux-theme
 Conflicts:	gtk2-theme-engine-ThinIce
@@ -29,8 +28,13 @@ Domy¶lne motywy dla ¶rodowiska GNOME2.
 
 %prep
 %setup -q
+%patch0 -p1
+
+mv po/{no,nb}.po
 
 %build
+glib-gettextize --copy --force
+intltoolize --copy --force
 %{__libtoolize}
 %{__aclocal}
 %{__automake}
