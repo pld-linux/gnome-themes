@@ -52,4 +52,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/gtk-2.0/2.*/engines/lib*.so
 %{_libdir}/gtk-2.0/2.*/engines/lib*.la
-%{_datadir}/*
+%{_datadir}/eazel-engine
+%{_datadir}/icons/*
+%{_datadir}/locale/*/LC_MESSAGES/gnome-themes.mo
+%{_datadir}/themes/*
