@@ -1,18 +1,19 @@
 Summary:	Default themes for GNOME2 enviroment
 Summary(pl):	Domy¶lne motywy dla ¶rodowiska GNOME2
 Name:		gnome-themes
-Version:	2.10.0
+Version:	2.10.1
 Release:	1
 License:	LGPL
 Group:		Themes
 Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-themes/2.10/%{name}-%{version}.tar.bz2
-# Source0-md5:	daa8b0a35f425ad442c950d615c026af
+# Source0-md5:	f365c73ccfbe35640e17fe8d877273fe
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf >= 2.52
 BuildRequires:	automake
 BuildRequires:	gtk2-engines >= 1:2.6.2-1
 BuildRequires:	libtool
 BuildRequires:	intltool >= 0.28
+BuildRequires:	rpmbuild(macros) >= 1.197
 Requires:	gtk2-engines >= 1:2.6.2-1
 Conflicts:	crux-engine
 Conflicts:	crux-theme
@@ -295,8 +296,8 @@ Motyw Traditional dla ¶rodowiska GNOME 2.
 %setup -q
 
 %build
-glib-gettextize --copy --force
-intltoolize --copy --force
+%{__glib_gettextize}
+%{__intltoolize}
 %{__libtoolize}
 %{__aclocal}
 %{__automake}
