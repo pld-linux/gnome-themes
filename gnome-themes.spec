@@ -1,12 +1,12 @@
 Summary:	Default themes for GNOME2 enviroment
 Summary(pl):	Domy¶lne motywy dla ¶rodowiska GNOME2
 Name:		gnome-themes
-Version:	2.11.90
+Version:	2.11.91
 Release:	1
 License:	LGPL
 Group:		Themes
 Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-themes/2.11/%{name}-%{version}.tar.bz2
-# Source0-md5:	a094386cb1a818f29b1c1b95c7c5f9ae
+# Source0-md5:	c040ffaf01d644bfba22e0835fdac7b0
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf >= 2.52
 BuildRequires:	automake
@@ -24,6 +24,19 @@ Default themes for GNOME2 enviroment.
 
 %description -l pl
 Domy¶lne motywy dla ¶rodowiska GNOME2.
+
+%package Clearlooks
+Summary:	Clearlooks theme for GNOME 2 enviroment
+Summary(pl):	Motyw Clearlooks dla ¶rodowiska GNOME 2
+Group:		Themes
+Requires:	%{name} = %{version}-%{release}
+Requires:	gnome-icon-theme >= 2.10.0
+
+%description Clearlooks
+Clearlooks theme for GNOME 2 enviroment.
+
+%description Clearlooks -l pl
+Motyw Clearlooks dla ¶rodowiska GNOME 2.
 
 %package Crux
 Summary:	Crux theme for GNOME 2 enviroment
@@ -327,6 +340,10 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
+
+%files Clearlooks
+%defattr(644,root,root,755)
+%{_datadir}/themes/Clearlooks
 
 %files Crux
 %defattr(644,root,root,755)
