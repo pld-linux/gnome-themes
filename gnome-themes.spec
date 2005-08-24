@@ -1,20 +1,20 @@
 Summary:	Default themes for GNOME2 enviroment
 Summary(pl):	Domy¶lne motywy dla ¶rodowiska GNOME2
 Name:		gnome-themes
-Version:	2.11.91
+Version:	2.11.92
 Release:	1
 License:	LGPL
 Group:		Themes
 Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-themes/2.11/%{name}-%{version}.tar.bz2
-# Source0-md5:	c040ffaf01d644bfba22e0835fdac7b0
+# Source0-md5:	89be15b82ac0561553356f537bb3686b
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf >= 2.52
 BuildRequires:	automake
-BuildRequires:	gtk2-engines >= 1:2.6.2-1
+BuildRequires:	gtk2-engines >= 1:2.6.5
 BuildRequires:	libtool
 BuildRequires:	intltool >= 0.28
 BuildRequires:	rpmbuild(macros) >= 1.197
-Requires:	gtk2-engines >= 1:2.6.2-1
+Requires:	gtk2-engines >= 1:2.6.5
 Conflicts:	crux-engine
 Conflicts:	crux-theme
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -70,7 +70,6 @@ Summary(pl):	Motyw Glider dla ¶rodowiska GNOME 2
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
 Requires:	gnome-icon-theme >= 2.10.0
-Requires:	gtk2-engines >= 2.6.2
 
 %description Glider
 Glider theme for GNOME 2 enviroment.
@@ -207,7 +206,6 @@ Group:		Themes
 Requires:	%{name} = %{version}-%{release}
 Requires:	%{name}-Sandwish = %{version}-%{release}
 Requires:	%{name}-Sandy = %{version}-%{release}
-Requires:	gtk2-engines >= 2.6.2
 
 %description Ocean-Dream
 Ocean-Dream theme for GNOME 2 enviroment.
@@ -343,7 +341,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files Clearlooks
 %defattr(644,root,root,755)
-%{_datadir}/themes/Clearlooks
+%{_datadir}/themes/Clearlooks/*
 
 %files Crux
 %defattr(644,root,root,755)
