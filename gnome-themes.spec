@@ -6,7 +6,7 @@ Release:	1
 License:	LGPL
 Group:		Themes
 Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-themes/2.12/%{name}-%{version}.tar.bz2
-# Source0-md5:	89be15b82ac0561553356f537bb3686b
+# Source0-md5:	8d7a899f8c12ef9e215bd6f035cd6495
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf >= 2.52
 BuildRequires:	automake
