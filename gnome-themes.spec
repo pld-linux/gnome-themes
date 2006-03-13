@@ -1,12 +1,12 @@
 Summary:	Default themes for GNOME enviroment
 Summary(pl):	Domy¶lne motywy dla ¶rodowiska GNOME
 Name:		gnome-themes
-Version:	2.13.92
+Version:	2.14.0
 Release:	1
 License:	LGPL
 Group:		Themes
-Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-themes/2.13/%{name}-%{version}.tar.bz2
-# Source0-md5:	50a1e62c355a205782567cf6cda6ca6a
+Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-themes/2.14/%{name}-%{version}.tar.bz2
+# Source0-md5:	329cfbfcb0add306e8bf6a09ada6f85b
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf >= 2.52
 BuildRequires:	automake
