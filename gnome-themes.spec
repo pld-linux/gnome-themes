@@ -1,12 +1,12 @@
-Summary:	Default themes for GNOME2 enviroment
-Summary(pl):	Domy¶lne motywy dla ¶rodowiska GNOME2
+Summary:	Default themes for GNOME enviroment
+Summary(pl):	Domy¶lne motywy dla ¶rodowiska GNOME
 Name:		gnome-themes
-Version:	2.12.3
+Version:	2.14.0
 Release:	1
 License:	LGPL
 Group:		Themes
-Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-themes/2.12/%{name}-%{version}.tar.bz2
-# Source0-md5:	d0c87819857df04c986645e027d965ed
+Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-themes/2.14/%{name}-%{version}.tar.bz2
+# Source0-md5:	329cfbfcb0add306e8bf6a09ada6f85b
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf >= 2.52
 BuildRequires:	automake
@@ -20,288 +20,288 @@ Conflicts:	crux-theme
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Default themes for GNOME2 enviroment.
+Default themes for GNOME enviroment.
 
 %description -l pl
-Domy¶lne motywy dla ¶rodowiska GNOME2.
+Domy¶lne motywy dla ¶rodowiska GNOME.
 
 %package Clearlooks
-Summary:	Clearlooks theme for GNOME 2 enviroment
-Summary(pl):	Motyw Clearlooks dla ¶rodowiska GNOME 2
+Summary:	Clearlooks theme for GNOME enviroment
+Summary(pl):	Motyw Clearlooks dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
 Requires:	gnome-icon-theme >= 2.10.0
 
 %description Clearlooks
-Clearlooks theme for GNOME 2 enviroment.
+Clearlooks theme for GNOME enviroment.
 
 %description Clearlooks -l pl
-Motyw Clearlooks dla ¶rodowiska GNOME 2.
+Motyw Clearlooks dla ¶rodowiska GNOME.
 
 %package Crux
-Summary:	Crux theme for GNOME 2 enviroment
-Summary(pl):	Motyw Crux dla ¶rodowiska GNOME 2
+Summary:	Crux theme for GNOME enviroment
+Summary(pl):	Motyw Crux dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
 Requires:	gnome-icon-theme >= 2.10.0
 
 %description Crux
-Crux theme for GNOME 2 enviroment.
+Crux theme for GNOME enviroment.
 
 %description Crux -l pl
-Motyw Crux dla ¶rodowiska GNOME 2.
+Motyw Crux dla ¶rodowiska GNOME.
 
 %package Flat-Blue
-Summary:	Flat-Blue theme for GNOME 2 enviroment
-Summary(pl):	Motyw Flat-Blue dla ¶rodowiska GNOME 2
+Summary:	Flat-Blue theme for GNOME enviroment
+Summary(pl):	Motyw Flat-Blue dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
 Requires:	gnome-icon-theme >= 2.10.0
 
 %description Flat-Blue
-Flat-Blue theme for GNOME 2 enviroment.
+Flat-Blue theme for GNOME enviroment.
 
 %description Flat-Blue -l pl
-Motyw Flat-Blue dla ¶rodowiska GNOME 2.
+Motyw Flat-Blue dla ¶rodowiska GNOME.
 
 %package Glider
-Summary:	Glider theme for GNOME 2 enviroment
-Summary(pl):	Motyw Glider dla ¶rodowiska GNOME 2
+Summary:	Glider theme for GNOME enviroment
+Summary(pl):	Motyw Glider dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
 Requires:	gnome-icon-theme >= 2.10.0
 
 %description Glider
-Glider theme for GNOME 2 enviroment.
+Glider theme for GNOME enviroment.
 
 %description Glider -l pl
-Motyw Glider dla ¶rodowiska GNOME 2.
+Motyw Glider dla ¶rodowiska GNOME.
 
 %package Grand-Canyon
-Summary:	Grand-Canyon theme for GNOME 2 enviroment
-Summary(pl):	Motyw Grand-Canyon dla ¶rodowiska GNOME 2
+Summary:	Grand-Canyon theme for GNOME enviroment
+Summary(pl):	Motyw Grand-Canyon dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
 Requires:	%{name}-Smokey = %{version}-%{release}
 Requires:	%{name}-Smokey-Red = %{version}-%{release}
 
 %description Grand-Canyon
-Grand-Canyon theme for GNOME 2 enviroment.
+Grand-Canyon theme for GNOME enviroment.
 
 %description Grand-Canyon -l pl
-Motyw Grand-Canyon dla ¶rodowiska GNOME 2.
+Motyw Grand-Canyon dla ¶rodowiska GNOME.
 
 %package HighContrast
-Summary:	HighContrast theme for GNOME 2 enviroment
-Summary(pl):	Motyw HighContrast dla ¶rodowiska GNOME 2
+Summary:	HighContrast theme for GNOME enviroment
+Summary(pl):	Motyw HighContrast dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
 Requires:	%{name}-HighContrastLargePrint = %{version}-%{release}
 Requires:	gnome-icon-theme >= 2.10.0
 
 %description HighContrast
-HighContrast theme for GNOME 2 enviroment.
+HighContrast theme for GNOME enviroment.
 
 %description HighContrast -l pl
-Motyw HighContrast dla ¶rodowiska GNOME 2.
+Motyw HighContrast dla ¶rodowiska GNOME.
 
 %package HighContrastInverse
-Summary:	HighContrastInverse theme for GNOME 2 enviroment
-Summary(pl):	Motyw HighContrastInverse dla ¶rodowiska GNOME 2
+Summary:	HighContrastInverse theme for GNOME enviroment
+Summary(pl):	Motyw HighContrastInverse dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
 Requires:	%{name}-HighContrastLargePrintInverse = %{version}-%{release}
 Requires:	gnome-icon-theme >= 2.10.0
 
 %description HighContrastInverse
-HighContrastInverse theme for GNOME 2 enviroment.
+HighContrastInverse theme for GNOME enviroment.
 
 %description HighContrastInverse -l pl
-Motyw HighContrastInverse dla ¶rodowiska GNOME 2.
+Motyw HighContrastInverse dla ¶rodowiska GNOME.
 
 %package HighContrastLargePrint
-Summary:	HighContrastLargePrint theme for GNOME 2 enviroment
-Summary(pl):	Motyw HighContrastLargePrint dla ¶rodowiska GNOME 2
+Summary:	HighContrastLargePrint theme for GNOME enviroment
+Summary(pl):	Motyw HighContrastLargePrint dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
 Requires:	%{name}-HighContrast = %{version}-%{release}
 Requires:	gnome-icon-theme >= 2.10.0
 
 %description HighContrastLargePrint
-HighContrastLargePrint theme for GNOME 2 enviroment.
+HighContrastLargePrint theme for GNOME enviroment.
 
 %description HighContrastLargePrint -l pl
-Motyw HighContrastLargePrint dla ¶rodowiska GNOME 2.
+Motyw HighContrastLargePrint dla ¶rodowiska GNOME.
 
 %package HighContrastLargePrintInverse
-Summary:	HighContrastLargePrintInverse theme for GNOME 2 enviroment
-Summary(pl):	Motyw HighContrastLargePrintInverse dla ¶rodowiska GNOME 2
+Summary:	HighContrastLargePrintInverse theme for GNOME enviroment
+Summary(pl):	Motyw HighContrastLargePrintInverse dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
 Requires:	gnome-icon-theme >= 2.10.0
 
 %description HighContrastLargePrintInverse
-HighContrastLargePrintInverse theme for GNOME 2 enviroment.
+HighContrastLargePrintInverse theme for GNOME enviroment.
 
 %description HighContrastLargePrintInverse -l pl
-Motyw HighContrastLargePrintInverse dla ¶rodowiska GNOME 2.
+Motyw HighContrastLargePrintInverse dla ¶rodowiska GNOME.
 
 %package LargePrint
-Summary:	LargePrint theme for GNOME 2 enviroment
-Summary(pl):	Motyw LargePrint dla ¶rodowiska GNOME 2
+Summary:	LargePrint theme for GNOME enviroment
+Summary(pl):	Motyw LargePrint dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
 Requires:	gnome-icon-theme >= 2.10.0
 
 %description LargePrint
-LargePrint theme for GNOME 2 enviroment.
+LargePrint theme for GNOME enviroment.
 
 %description LargePrint -l pl
-Motyw LargePrint dla ¶rodowiska GNOME 2.
+Motyw LargePrint dla ¶rodowiska GNOME.
 
 %package LowContrast
-Summary:	LowContrast theme for GNOME 2 enviroment
-Summary(pl):	Motyw LowContrast dla ¶rodowiska GNOME 2
+Summary:	LowContrast theme for GNOME enviroment
+Summary(pl):	Motyw LowContrast dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
 Requires:	%{name}-LowContrastLargePrint = %{version}-%{release}
 Requires:	gnome-icon-theme >= 2.10.0
 
 %description LowContrast
-LowContrast theme for GNOME 2 enviroment.
+LowContrast theme for GNOME enviroment.
 
 %description LowContrast -l pl
-Motyw LowContrast dla ¶rodowiska GNOME 2.
+Motyw LowContrast dla ¶rodowiska GNOME.
 
 %package LowContrastLargePrint
-Summary:	LowContrastLargePrint theme for GNOME 2 enviroment
-Summary(pl):	Motyw LowContrastLargePrint dla ¶rodowiska GNOME 2
+Summary:	LowContrastLargePrint theme for GNOME enviroment
+Summary(pl):	Motyw LowContrastLargePrint dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
 Requires:	gnome-icon-theme >= 2.10.0
 
 %description LowContrastLargePrint
-LowContrastLargePrint theme for GNOME 2 enviroment.
+LowContrastLargePrint theme for GNOME enviroment.
 
 %description LowContrastLargePrint -l pl
-Motyw LowContrastLargePrint dla ¶rodowiska GNOME 2.
+Motyw LowContrastLargePrint dla ¶rodowiska GNOME.
 
 %package Mist
-Summary:	Mist theme for GNOME 2 enviroment
-Summary(pl):	Motyw Mist dla ¶rodowiska GNOME 2
+Summary:	Mist theme for GNOME enviroment
+Summary(pl):	Motyw Mist dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
 Requires:	%{name}-Flat-Blue = %{version}-%{release}
 
 %description Mist
-Mist theme for GNOME 2 enviroment.
+Mist theme for GNOME enviroment.
 
 %description Mist -l pl
-Motyw Mist dla ¶rodowiska GNOME 2.
+Motyw Mist dla ¶rodowiska GNOME.
 
 %package Ocean-Dream
-Summary:	Ocean-Dream theme for GNOME 2 enviroment
-Summary(pl):	Motyw Ocean-Dream dla ¶rodowiska GNOME 2
+Summary:	Ocean-Dream theme for GNOME enviroment
+Summary(pl):	Motyw Ocean-Dream dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
 Requires:	%{name}-Sandwish = %{version}-%{release}
 Requires:	%{name}-Sandy = %{version}-%{release}
 
 %description Ocean-Dream
-Ocean-Dream theme for GNOME 2 enviroment.
+Ocean-Dream theme for GNOME enviroment.
 
 %description Ocean-Dream -l pl
-Motyw Ocean-Dream dla ¶rodowiska GNOME 2.
+Motyw Ocean-Dream dla ¶rodowiska GNOME.
 
 %package Sandwish
-Summary:	Sandwish theme for GNOME 2 enviroment
-Summary(pl):	Motyw Sandwish dla ¶rodowiska GNOME 2
+Summary:	Sandwish theme for GNOME enviroment
+Summary(pl):	Motyw Sandwish dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
 
 %description Sandwish
-Sandwish theme for GNOME 2 enviroment.
+Sandwish theme for GNOME enviroment.
 
 %description Sandwish -l pl
-Motyw Sandwish dla ¶rodowiska GNOME 2.
+Motyw Sandwish dla ¶rodowiska GNOME.
 
 %package Sandy
-Summary:	Sandy theme for GNOME 2 enviroment
-Summary(pl):	Motyw Sandy dla ¶rodowiska GNOME 2
+Summary:	Sandy theme for GNOME enviroment
+Summary(pl):	Motyw Sandy dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
 Requires:	gnome-icon-theme >= 2.10.0
 
 %description Sandy
-Sandy theme for GNOME 2 enviroment.
+Sandy theme for GNOME enviroment.
 
 %description Sandy -l pl
-Motyw Sandy dla ¶rodowiska GNOME 2.
+Motyw Sandy dla ¶rodowiska GNOME.
 
 %package Simple
-Summary:	Simple theme for GNOME 2 enviroment
-Summary(pl):	Motyw Simple dla ¶rodowiska GNOME 2
+Summary:	Simple theme for GNOME enviroment
+Summary(pl):	Motyw Simple dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
 Requires:	gnome-icon-theme >= 2.10.0
 
 %description Simple
-Simple theme for GNOME 2 enviroment.
+Simple theme for GNOME enviroment.
 
 %description Simple -l pl
-Motyw Simple dla ¶rodowiska GNOME 2.
+Motyw Simple dla ¶rodowiska GNOME.
 
 %package Smokey
-Summary:	Smokey theme for GNOME 2 enviroment
-Summary(pl):	Motyw Smokey dla ¶rodowiska GNOME 2
+Summary:	Smokey theme for GNOME enviroment
+Summary(pl):	Motyw Smokey dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
 
 %description Smokey
-Smokey theme for GNOME 2 enviroment.
+Smokey theme for GNOME enviroment.
 
 %description Smokey -l pl
-Motyw Smokey dla ¶rodowiska GNOME 2.
+Motyw Smokey dla ¶rodowiska GNOME.
 
 %package Smokey-Blue
-Summary:	Smokey-Blue theme for GNOME 2 enviroment
-Summary(pl):	Motyw Smokey-Blue dla ¶rodowiska GNOME 2
+Summary:	Smokey-Blue theme for GNOME enviroment
+Summary(pl):	Motyw Smokey-Blue dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
 Requires:	%{name}-Smokey = %{version}-%{release}
 Requires:	gnome-icon-theme >= 2.10.0
 
 %description Smokey-Blue
-Smokey-Blue theme for GNOME 2 enviroment.
+Smokey-Blue theme for GNOME enviroment.
 
 %description Smokey-Blue -l pl
-Motyw Smokey-Blue dla ¶rodowiska GNOME 2.
+Motyw Smokey-Blue dla ¶rodowiska GNOME.
 
 %package Smokey-Red
-Summary:	Smokey-Red theme for GNOME 2 enviroment
-Summary(pl):	Motyw Smokey-Red dla ¶rodowiska GNOME 2
+Summary:	Smokey-Red theme for GNOME enviroment
+Summary(pl):	Motyw Smokey-Red dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
 Requires:	gnome-icon-theme >= 2.10.0
 
 %description Smokey-Red
-Smokey-Red theme for GNOME 2 enviroment.
+Smokey-Red theme for GNOME enviroment.
 
 %description Smokey-Red -l pl
-Motyw Smokey-Red dla ¶rodowiska GNOME 2.
+Motyw Smokey-Red dla ¶rodowiska GNOME.
 
 %package Traditional
-Summary:	Traditional theme for GNOME 2 enviroment
-Summary(pl):	Motyw Traditional dla ¶rodowiska GNOME 2
+Summary:	Traditional theme for GNOME enviroment
+Summary(pl):	Motyw Traditional dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
 Requires:	gnome-icon-theme >= 2.10.0
 
 %description Traditional
-Traditional theme for GNOME 2 enviroment.
+Traditional theme for GNOME enviroment.
 
 %description Traditional -l pl
-Motyw Traditional dla ¶rodowiska GNOME 2.
+Motyw Traditional dla ¶rodowiska GNOME.
 
 %prep
 %setup -q
