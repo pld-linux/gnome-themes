@@ -2,7 +2,7 @@ Summary:	Default themes for GNOME enviroment
 Summary(pl):	Domy¶lne motywy dla ¶rodowiska GNOME
 Name:		gnome-themes
 Version:	2.14.0
-Release:	1
+Release:	2
 License:	LGPL
 Group:		Themes
 Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-themes/2.14/%{name}-%{version}.tar.bz2
@@ -30,7 +30,7 @@ Summary:	Clearlooks theme for GNOME enviroment
 Summary(pl):	Motyw Clearlooks dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.10.0
+Requires:	gnome-icon-theme >= 2.14.0
 
 %description Clearlooks
 Clearlooks theme for GNOME enviroment.
@@ -43,7 +43,7 @@ Summary:	Crux theme for GNOME enviroment
 Summary(pl):	Motyw Crux dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.10.0
+Requires:	gnome-icon-theme >= 2.14.0
 
 %description Crux
 Crux theme for GNOME enviroment.
@@ -56,7 +56,7 @@ Summary:	Flat-Blue theme for GNOME enviroment
 Summary(pl):	Motyw Flat-Blue dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.10.0
+Requires:	gnome-icon-theme >= 2.14.0
 
 %description Flat-Blue
 Flat-Blue theme for GNOME enviroment.
@@ -69,7 +69,7 @@ Summary:	Glider theme for GNOME enviroment
 Summary(pl):	Motyw Glider dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.10.0
+Requires:	gnome-icon-theme >= 2.14.0
 
 %description Glider
 Glider theme for GNOME enviroment.
@@ -97,7 +97,7 @@ Summary(pl):	Motyw HighContrast dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
 Requires:	%{name}-HighContrastLargePrint = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.10.0
+Requires:	gnome-icon-theme >= 2.14.0
 
 %description HighContrast
 HighContrast theme for GNOME enviroment.
@@ -111,7 +111,7 @@ Summary(pl):	Motyw HighContrastInverse dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
 Requires:	%{name}-HighContrastLargePrintInverse = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.10.0
+Requires:	gnome-icon-theme >= 2.14.0
 
 %description HighContrastInverse
 HighContrastInverse theme for GNOME enviroment.
@@ -125,7 +125,7 @@ Summary(pl):	Motyw HighContrastLargePrint dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
 Requires:	%{name}-HighContrast = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.10.0
+Requires:	gnome-icon-theme >= 2.14.0
 
 %description HighContrastLargePrint
 HighContrastLargePrint theme for GNOME enviroment.
@@ -138,7 +138,7 @@ Summary:	HighContrastLargePrintInverse theme for GNOME enviroment
 Summary(pl):	Motyw HighContrastLargePrintInverse dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.10.0
+Requires:	gnome-icon-theme >= 2.14.0
 
 %description HighContrastLargePrintInverse
 HighContrastLargePrintInverse theme for GNOME enviroment.
@@ -151,7 +151,7 @@ Summary:	LargePrint theme for GNOME enviroment
 Summary(pl):	Motyw LargePrint dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.10.0
+Requires:	gnome-icon-theme >= 2.14.0
 
 %description LargePrint
 LargePrint theme for GNOME enviroment.
@@ -165,7 +165,7 @@ Summary(pl):	Motyw LowContrast dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
 Requires:	%{name}-LowContrastLargePrint = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.10.0
+Requires:	gnome-icon-theme >= 2.14.0
 
 %description LowContrast
 LowContrast theme for GNOME enviroment.
@@ -178,7 +178,7 @@ Summary:	LowContrastLargePrint theme for GNOME enviroment
 Summary(pl):	Motyw LowContrastLargePrint dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.10.0
+Requires:	gnome-icon-theme >= 2.14.0
 
 %description LowContrastLargePrint
 LowContrastLargePrint theme for GNOME enviroment.
@@ -230,7 +230,7 @@ Summary:	Sandy theme for GNOME enviroment
 Summary(pl):	Motyw Sandy dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.10.0
+Requires:	gnome-icon-theme >= 2.14.0
 
 %description Sandy
 Sandy theme for GNOME enviroment.
@@ -243,7 +243,7 @@ Summary:	Simple theme for GNOME enviroment
 Summary(pl):	Motyw Simple dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.10.0
+Requires:	gnome-icon-theme >= 2.14.0
 
 %description Simple
 Simple theme for GNOME enviroment.
@@ -269,7 +269,7 @@ Summary(pl):	Motyw Smokey-Blue dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
 Requires:	%{name}-Smokey = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.10.0
+Requires:	gnome-icon-theme >= 2.14.0
 
 %description Smokey-Blue
 Smokey-Blue theme for GNOME enviroment.
@@ -282,7 +282,7 @@ Summary:	Smokey-Red theme for GNOME enviroment
 Summary(pl):	Motyw Smokey-Red dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.10.0
+Requires:	gnome-icon-theme >= 2.14.0
 
 %description Smokey-Red
 Smokey-Red theme for GNOME enviroment.
@@ -295,7 +295,7 @@ Summary:	Traditional theme for GNOME enviroment
 Summary(pl):	Motyw Traditional dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.10.0
+Requires:	gnome-icon-theme >= 2.14.0
 
 %description Traditional
 Traditional theme for GNOME enviroment.
