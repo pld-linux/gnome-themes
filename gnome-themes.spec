@@ -1,20 +1,20 @@
 Summary:	Default themes for GNOME enviroment
 Summary(pl):	Domy¶lne motywy dla ¶rodowiska GNOME
 Name:		gnome-themes
-Version:	2.14.0
-Release:	2
+Version:	2.14.2
+Release:	1
 License:	LGPL
 Group:		Themes
 Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-themes/2.14/%{name}-%{version}.tar.bz2
-# Source0-md5:	329cfbfcb0add306e8bf6a09ada6f85b
+# Source0-md5:	aa369e130f9fc3b8fd0fd4481766a56c
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf >= 2.52
 BuildRequires:	automake
-BuildRequires:	gtk2-engines >= 1:2.6.5
+BuildRequires:	gtk2-engines >= 1:2.6.9
 BuildRequires:	libtool
 BuildRequires:	intltool >= 0.28
 BuildRequires:	rpmbuild(macros) >= 1.197
-Requires:	gtk2-engines >= 1:2.6.5
+Requires:	gtk2-engines >= 1:2.6.9
 Conflicts:	crux-engine
 Conflicts:	crux-theme
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
