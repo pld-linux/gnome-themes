@@ -1,23 +1,24 @@
 Summary:	Default themes for GNOME enviroment
 Summary(pl):	Domy¶lne motywy dla ¶rodowiska GNOME
 Name:		gnome-themes
-Version:	2.15.2
+Version:	2.15.3
 Release:	1
 License:	LGPL
 Group:		Themes
 Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-themes/2.15/%{name}-%{version}.tar.bz2
-# Source0-md5:	b5f19062e51b18d4644453d31b865be7
+# Source0-md5:	9fb11c076154315a674ddd86b8113f7b
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf >= 2.52
 BuildRequires:	automake
 BuildRequires:	gtk2-engines >= 1:2.7.4
 BuildRequires:	icon-naming-utils >= 0.7.2
-BuildRequires:	intltool >= 0.28
+BuildRequires:	intltool >= 0.35
 BuildRequires:	libtool
 BuildRequires:	rpmbuild(macros) >= 1.197
 Requires:	gtk2-engines >= 1:2.7.4
 Conflicts:	crux-engine
 Conflicts:	crux-theme
+Obsoletes:	gnome-themes-Traditional
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -304,19 +305,6 @@ Smokey-Red theme for GNOME enviroment.
 %description Smokey-Red -l pl
 Motyw Smokey-Red dla ¶rodowiska GNOME.
 
-%package Traditional
-Summary:	Traditional theme for GNOME enviroment
-Summary(pl):	Motyw Traditional dla ¶rodowiska GNOME
-Group:		Themes
-Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.15.2
-
-%description Traditional
-Traditional theme for GNOME enviroment.
-
-%description Traditional -l pl
-Motyw Traditional dla ¶rodowiska GNOME.
-
 %prep
 %setup -q
 
@@ -454,7 +442,3 @@ rm -rf $RPM_BUILD_ROOT
 %files Smokey-Red
 %defattr(644,root,root,755)
 %{_datadir}/icons/Smokey-Red
-
-%files Traditional
-%defattr(644,root,root,755)
-%{_datadir}/themes/Traditional
