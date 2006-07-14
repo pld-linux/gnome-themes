@@ -1,24 +1,32 @@
 Summary:	Default themes for GNOME enviroment
 Summary(pl):	Domy¶lne motywy dla ¶rodowiska GNOME
 Name:		gnome-themes
-Version:	2.15.3
+Version:	2.15.4
 Release:	1
 License:	LGPL
 Group:		Themes
 Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-themes/2.15/%{name}-%{version}.tar.bz2
-# Source0-md5:	9fb11c076154315a674ddd86b8113f7b
+# Source0-md5:	d402cd1acd3fc7b50b1ce4ea0e53f16a
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf >= 2.52
 BuildRequires:	automake
-BuildRequires:	gtk2-engines >= 1:2.7.4
-BuildRequires:	icon-naming-utils >= 0.7.2
+BuildRequires:	gtk2-engines >= 1:2.7.5
+BuildRequires:	icon-naming-utils >= 0.7.3
 BuildRequires:	intltool >= 0.35
 BuildRequires:	libtool
 BuildRequires:	rpmbuild(macros) >= 1.197
-Requires:	gtk2-engines >= 1:2.7.4
+Requires:	gtk2-engines >= 1:2.7.5
 Conflicts:	crux-engine
 Conflicts:	crux-theme
 Obsoletes:	gnome-themes-Traditional
+Obsoletes:	gnome-themes-Grand-Canyon
+Obsoletes:	gnome-themes-Ocean-Dream
+Obsoletes:	gnome-themes-Sandwish
+Obsoletes:	gnome-themes-Sandy
+Obsoletes:	gnome-themes-Simple
+Obsoletes:	gnome-themes-Smokey
+Obsoletes:	gnome-themes-Smokey-Blue
+Obsoletes:	gnome-themes-Smokey-Red
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -78,20 +86,6 @@ Glider theme for GNOME enviroment.
 
 %description Glider -l pl
 Motyw Glider dla ¶rodowiska GNOME.
-
-%package Grand-Canyon
-Summary:	Grand-Canyon theme for GNOME enviroment
-Summary(pl):	Motyw Grand-Canyon dla ¶rodowiska GNOME
-Group:		Themes
-Requires:	%{name} = %{version}-%{release}
-Requires:	%{name}-Smokey = %{version}-%{release}
-Requires:	%{name}-Smokey-Red = %{version}-%{release}
-
-%description Grand-Canyon
-Grand-Canyon theme for GNOME enviroment.
-
-%description Grand-Canyon -l pl
-Motyw Grand-Canyon dla ¶rodowiska GNOME.
 
 %package HighContrast
 Summary:	HighContrast theme for GNOME enviroment
@@ -214,97 +208,6 @@ Mist theme for GNOME enviroment.
 %description Mist -l pl
 Motyw Mist dla ¶rodowiska GNOME.
 
-%package Ocean-Dream
-Summary:	Ocean-Dream theme for GNOME enviroment
-Summary(pl):	Motyw Ocean-Dream dla ¶rodowiska GNOME
-Group:		Themes
-Requires:	%{name} = %{version}-%{release}
-Requires:	%{name}-Sandwish = %{version}-%{release}
-Requires:	%{name}-Sandy = %{version}-%{release}
-
-%description Ocean-Dream
-Ocean-Dream theme for GNOME enviroment.
-
-%description Ocean-Dream -l pl
-Motyw Ocean-Dream dla ¶rodowiska GNOME.
-
-%package Sandwish
-Summary:	Sandwish theme for GNOME enviroment
-Summary(pl):	Motyw Sandwish dla ¶rodowiska GNOME
-Group:		Themes
-Requires:	%{name} = %{version}-%{release}
-
-%description Sandwish
-Sandwish theme for GNOME enviroment.
-
-%description Sandwish -l pl
-Motyw Sandwish dla ¶rodowiska GNOME.
-
-%package Sandy
-Summary:	Sandy theme for GNOME enviroment
-Summary(pl):	Motyw Sandy dla ¶rodowiska GNOME
-Group:		Themes
-Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.15.2
-
-%description Sandy
-Sandy theme for GNOME enviroment.
-
-%description Sandy -l pl
-Motyw Sandy dla ¶rodowiska GNOME.
-
-%package Simple
-Summary:	Simple theme for GNOME enviroment
-Summary(pl):	Motyw Simple dla ¶rodowiska GNOME
-Group:		Themes
-Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.15.2
-
-%description Simple
-Simple theme for GNOME enviroment.
-
-%description Simple -l pl
-Motyw Simple dla ¶rodowiska GNOME.
-
-%package Smokey
-Summary:	Smokey theme for GNOME enviroment
-Summary(pl):	Motyw Smokey dla ¶rodowiska GNOME
-Group:		Themes
-Requires:	%{name} = %{version}-%{release}
-
-%description Smokey
-Smokey theme for GNOME enviroment.
-
-%description Smokey -l pl
-Motyw Smokey dla ¶rodowiska GNOME.
-
-%package Smokey-Blue
-Summary:	Smokey-Blue theme for GNOME enviroment
-Summary(pl):	Motyw Smokey-Blue dla ¶rodowiska GNOME
-Group:		Themes
-Requires:	%{name} = %{version}-%{release}
-Requires:	%{name}-Smokey = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.15.2
-
-%description Smokey-Blue
-Smokey-Blue theme for GNOME enviroment.
-
-%description Smokey-Blue -l pl
-Motyw Smokey-Blue dla ¶rodowiska GNOME.
-
-%package Smokey-Red
-Summary:	Smokey-Red theme for GNOME enviroment
-Summary(pl):	Motyw Smokey-Red dla ¶rodowiska GNOME
-Group:		Themes
-Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.15.2
-
-%description Smokey-Red
-Smokey-Red theme for GNOME enviroment.
-
-%description Smokey-Red -l pl
-Motyw Smokey-Red dla ¶rodowiska GNOME.
-
 %prep
 %setup -q
 
@@ -328,7 +231,7 @@ rm -rf $RPM_BUILD_ROOT
 
 for dir in Crux Flat-Blue HighContrast HighContrast-SVG HighContrastInverse \
 	HighContrastLargePrint HighContrastLargePrintInverse LargePrint \
-	LowContrast LowContrastLargePrint Sandy Smokey-Blue Smokey-Red
+	LowContrast LowContrastLargePrint
 do
         gtk-update-icon-cache -ft $RPM_BUILD_ROOT%{_datadir}/icons/$dir
 done
@@ -365,10 +268,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %{_datadir}/themes/Glider
 
-%files Grand-Canyon
-%defattr(644,root,root,755)
-%{_datadir}/themes/Grand-Canyon
-
 %files HighContrast
 %defattr(644,root,root,755)
 %{_datadir}/icons/HighContrast
@@ -377,7 +276,6 @@ rm -rf $RPM_BUILD_ROOT
 %files HighContrast-SVG
 %defattr(644,root,root,755)
 %{_datadir}/icons/HighContrast-SVG
-%{_datadir}/themes/HighContrast-SVG
 
 %files HighContrastInverse
 %defattr(644,root,root,755)
@@ -413,32 +311,3 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %{_datadir}/themes/Mist/metacity-1
 %{_datadir}/themes/Mist/index.theme
-
-%files Ocean-Dream
-%defattr(644,root,root,755)
-%{_datadir}/themes/Ocean-Dream
-
-%files Sandwish
-%defattr(644,root,root,755)
-%{_datadir}/themes/Sandwish
-
-%files Sandy
-%defattr(644,root,root,755)
-%{_datadir}/icons/Sandy
-
-%files Simple
-%defattr(644,root,root,755)
-%{_datadir}/themes/Simple
-
-%files Smokey
-%defattr(644,root,root,755)
-%{_datadir}/themes/Smokey
-
-%files Smokey-Blue
-%defattr(644,root,root,755)
-%{_datadir}/icons/Smokey-Blue
-%{_datadir}/themes/Smokey-Blue
-
-%files Smokey-Red
-%defattr(644,root,root,755)
-%{_datadir}/icons/Smokey-Red
