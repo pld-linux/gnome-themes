@@ -1,21 +1,21 @@
 Summary:	Default themes for GNOME enviroment
 Summary(pl):	Domy¶lne motywy dla ¶rodowiska GNOME
 Name:		gnome-themes
-Version:	2.15.4
+Version:	2.15.90
 Release:	1
 License:	LGPL
 Group:		Themes
 Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-themes/2.15/%{name}-%{version}.tar.bz2
-# Source0-md5:	d402cd1acd3fc7b50b1ce4ea0e53f16a
+# Source0-md5:	9ee69574d10a81215448f38a02e262e3
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf >= 2.52
 BuildRequires:	automake
-BuildRequires:	gtk2-engines >= 1:2.7.5
-BuildRequires:	icon-naming-utils >= 0.7.3
+BuildRequires:	gtk2-engines >= 1:2.7.6
+BuildRequires:	icon-naming-utils >= 0.7.4
 BuildRequires:	intltool >= 0.35
 BuildRequires:	libtool
 BuildRequires:	rpmbuild(macros) >= 1.197
-Requires:	gtk2-engines >= 1:2.7.5
+Requires:	gtk2-engines >= 1:2.7.6
 Conflicts:	crux-engine
 Conflicts:	crux-theme
 Obsoletes:	gnome-themes-Traditional
@@ -40,7 +40,7 @@ Summary:	Clearlooks theme for GNOME enviroment
 Summary(pl):	Motyw Clearlooks dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.15.2
+Requires:	gnome-icon-theme >= 2.15.90
 
 %description Clearlooks
 Clearlooks theme for GNOME enviroment.
@@ -53,7 +53,7 @@ Summary:	Crux theme for GNOME enviroment
 Summary(pl):	Motyw Crux dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.15.2
+Requires:	gnome-icon-theme >= 2.15.90
 
 %description Crux
 Crux theme for GNOME enviroment.
@@ -66,7 +66,7 @@ Summary:	Flat-Blue theme for GNOME enviroment
 Summary(pl):	Motyw Flat-Blue dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.15.2
+Requires:	gnome-icon-theme >= 2.15.90
 
 %description Flat-Blue
 Flat-Blue theme for GNOME enviroment.
@@ -79,7 +79,7 @@ Summary:	Glider theme for GNOME enviroment
 Summary(pl):	Motyw Glider dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.15.2
+Requires:	gnome-icon-theme >= 2.15.90
 
 %description Glider
 Glider theme for GNOME enviroment.
@@ -93,7 +93,7 @@ Summary(pl):	Motyw HighContrast dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
 Requires:	%{name}-HighContrastLargePrint = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.15.2
+Requires:	gnome-icon-theme >= 2.15.90
 
 %description HighContrast
 HighContrast theme for GNOME enviroment.
@@ -106,7 +106,7 @@ Summary:	HighContrast SVG theme for GNOME enviroment
 Summary(pl):	Motyw HighContrast SVG dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.15.2
+Requires:	gnome-icon-theme >= 2.15.90
 
 %description HighContrast-SVG
 HighContrast theme for GNOME enviroment (svg version).
@@ -120,7 +120,7 @@ Summary(pl):	Motyw HighContrastInverse dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
 Requires:	%{name}-HighContrastLargePrintInverse = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.15.2
+Requires:	gnome-icon-theme >= 2.15.90
 
 %description HighContrastInverse
 HighContrastInverse theme for GNOME enviroment.
@@ -134,7 +134,7 @@ Summary(pl):	Motyw HighContrastLargePrint dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
 Requires:	%{name}-HighContrast = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.15.2
+Requires:	gnome-icon-theme >= 2.15.90
 
 %description HighContrastLargePrint
 HighContrastLargePrint theme for GNOME enviroment.
@@ -147,7 +147,7 @@ Summary:	HighContrastLargePrintInverse theme for GNOME enviroment
 Summary(pl):	Motyw HighContrastLargePrintInverse dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.15.2
+Requires:	gnome-icon-theme >= 2.15.90
 
 %description HighContrastLargePrintInverse
 HighContrastLargePrintInverse theme for GNOME enviroment.
@@ -160,7 +160,7 @@ Summary:	LargePrint theme for GNOME enviroment
 Summary(pl):	Motyw LargePrint dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.15.2
+Requires:	gnome-icon-theme >= 2.15.90
 
 %description LargePrint
 LargePrint theme for GNOME enviroment.
@@ -174,7 +174,7 @@ Summary(pl):	Motyw LowContrast dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
 Requires:	%{name}-LowContrastLargePrint = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.15.2
+Requires:	gnome-icon-theme >= 2.15.90
 
 %description LowContrast
 LowContrast theme for GNOME enviroment.
@@ -187,7 +187,7 @@ Summary:	LowContrastLargePrint theme for GNOME enviroment
 Summary(pl):	Motyw LowContrastLargePrint dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.15.2
+Requires:	gnome-icon-theme >= 2.15.90
 
 %description LowContrastLargePrint
 LowContrastLargePrint theme for GNOME enviroment.
