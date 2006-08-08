@@ -1,23 +1,27 @@
+#
+%define		git_version	2.15.91
+#
 Summary:	Default themes for GNOME enviroment
 Summary(pl):	Domy¶lne motywy dla ¶rodowiska GNOME
 Name:		gnome-themes
-Version:	2.15.90
+Version:	2.15.91
 Release:	1
 License:	LGPL
 Group:		Themes
 Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-themes/2.15/%{name}-%{version}.tar.bz2
-# Source0-md5:	9ee69574d10a81215448f38a02e262e3
+# Source0-md5:	681693616f195486af282f6433d27b7c
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf >= 2.52
 BuildRequires:	automake
-BuildRequires:	gtk2-engines >= 1:2.7.6
-BuildRequires:	icon-naming-utils >= 0.7.4
+BuildRequires:	gtk2-engines >= 1:2.7.7
+BuildRequires:	icon-naming-utils >= 0.8.0
 BuildRequires:	intltool >= 0.35
 BuildRequires:	libtool
 BuildRequires:	rpmbuild(macros) >= 1.197
 Requires:	gtk2-engines >= 1:2.7.6
 Conflicts:	crux-engine
 Conflicts:	crux-theme
+Obsoletes:	gnome-themes-Flat-Blue
 Obsoletes:	gnome-themes-Traditional
 Obsoletes:	gnome-themes-Grand-Canyon
 Obsoletes:	gnome-themes-Ocean-Dream
@@ -35,12 +39,25 @@ Default themes for GNOME enviroment.
 %description -l pl
 Domy¶lne motywy dla ¶rodowiska GNOME.
 
+%package Clarius
+Summary:	Clarius theme for GNOME enviroment
+Summary(pl):	Motyw Clarius dla ¶rodowiska GNOME
+Group:		Themes
+Requires:	%{name} = %{version}-%{release}
+Requires:	gnome-icon-theme >= 2.15.90
+
+%description Clarius
+Clarius theme for GNOME enviroment.
+
+%description Clarius -l pl
+Motyw Clarius dla ¶rodowiska GNOME.
+
 %package Clearlooks
 Summary:	Clearlooks theme for GNOME enviroment
 Summary(pl):	Motyw Clearlooks dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.15.90
+Requires:	gnome-icon-theme >= %{git_version}
 
 %description Clearlooks
 Clearlooks theme for GNOME enviroment.
@@ -53,7 +70,7 @@ Summary:	Crux theme for GNOME enviroment
 Summary(pl):	Motyw Crux dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.15.90
+Requires:	gnome-icon-theme >= %{git_version}
 
 %description Crux
 Crux theme for GNOME enviroment.
@@ -61,25 +78,12 @@ Crux theme for GNOME enviroment.
 %description Crux -l pl
 Motyw Crux dla ¶rodowiska GNOME.
 
-%package Flat-Blue
-Summary:	Flat-Blue theme for GNOME enviroment
-Summary(pl):	Motyw Flat-Blue dla ¶rodowiska GNOME
-Group:		Themes
-Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.15.90
-
-%description Flat-Blue
-Flat-Blue theme for GNOME enviroment.
-
-%description Flat-Blue -l pl
-Motyw Flat-Blue dla ¶rodowiska GNOME.
-
 %package Glider
 Summary:	Glider theme for GNOME enviroment
 Summary(pl):	Motyw Glider dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.15.90
+Requires:	gnome-icon-theme >= %{git_version}
 
 %description Glider
 Glider theme for GNOME enviroment.
@@ -93,7 +97,7 @@ Summary(pl):	Motyw HighContrast dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
 Requires:	%{name}-HighContrastLargePrint = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.15.90
+Requires:	gnome-icon-theme >= %{git_version}
 
 %description HighContrast
 HighContrast theme for GNOME enviroment.
@@ -106,7 +110,7 @@ Summary:	HighContrast SVG theme for GNOME enviroment
 Summary(pl):	Motyw HighContrast SVG dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.15.90
+Requires:	gnome-icon-theme >= %{git_version}
 
 %description HighContrast-SVG
 HighContrast theme for GNOME enviroment (svg version).
@@ -120,7 +124,7 @@ Summary(pl):	Motyw HighContrastInverse dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
 Requires:	%{name}-HighContrastLargePrintInverse = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.15.90
+Requires:	gnome-icon-theme >= %{git_version}
 
 %description HighContrastInverse
 HighContrastInverse theme for GNOME enviroment.
@@ -134,7 +138,7 @@ Summary(pl):	Motyw HighContrastLargePrint dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
 Requires:	%{name}-HighContrast = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.15.90
+Requires:	gnome-icon-theme >= %{git_version}
 
 %description HighContrastLargePrint
 HighContrastLargePrint theme for GNOME enviroment.
@@ -147,7 +151,7 @@ Summary:	HighContrastLargePrintInverse theme for GNOME enviroment
 Summary(pl):	Motyw HighContrastLargePrintInverse dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.15.90
+Requires:	gnome-icon-theme >= %{git_version}
 
 %description HighContrastLargePrintInverse
 HighContrastLargePrintInverse theme for GNOME enviroment.
@@ -160,7 +164,7 @@ Summary:	LargePrint theme for GNOME enviroment
 Summary(pl):	Motyw LargePrint dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.15.90
+Requires:	gnome-icon-theme >= %{git_version}
 
 %description LargePrint
 LargePrint theme for GNOME enviroment.
@@ -174,7 +178,7 @@ Summary(pl):	Motyw LowContrast dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
 Requires:	%{name}-LowContrastLargePrint = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.15.90
+Requires:	gnome-icon-theme >= %{git_version}
 
 %description LowContrast
 LowContrast theme for GNOME enviroment.
@@ -187,7 +191,7 @@ Summary:	LowContrastLargePrint theme for GNOME enviroment
 Summary(pl):	Motyw LowContrastLargePrint dla ¶rodowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.15.90
+Requires:	gnome-icon-theme >= %{git_version}
 
 %description LowContrastLargePrint
 LowContrastLargePrint theme for GNOME enviroment.
@@ -229,11 +233,11 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-for dir in Crux Flat-Blue HighContrast HighContrast-SVG HighContrastInverse \
+for dir in Crux HighContrast HighContrast-SVG HighContrastInverse \
 	HighContrastLargePrint HighContrastLargePrintInverse LargePrint \
 	LowContrast LowContrastLargePrint
 do
-        gtk-update-icon-cache -ft $RPM_BUILD_ROOT%{_datadir}/icons/$dir
+        gtk-update-icon-cache -ft $RPM_BUILD_ROOT%{_iconsdir}/$dir
 done
 
 rm -r $RPM_BUILD_ROOT%{_datadir}/locale/ug
@@ -251,18 +255,18 @@ rm -rf $RPM_BUILD_ROOT
 %files -f %{name}.lang
 %defattr(644,root,root,755)
 
+%files Clarius
+%defattr(644,root,root,755)
+%{_datadir}/themes/Clarius
+
 %files Clearlooks
 %defattr(644,root,root,755)
 %{_datadir}/themes/Clearlooks/*
 
 %files Crux
 %defattr(644,root,root,755)
-%{_datadir}/icons/Crux
 %{_datadir}/themes/Crux/index.theme
-
-%files Flat-Blue
-%defattr(644,root,root,755)
-%{_datadir}/icons/Flat-Blue
+%{_iconsdir}/Crux
 
 %files Glider
 %defattr(644,root,root,755)
@@ -270,44 +274,45 @@ rm -rf $RPM_BUILD_ROOT
 
 %files HighContrast
 %defattr(644,root,root,755)
-%{_datadir}/icons/HighContrast
 %{_datadir}/themes/HighContrast
+%{_iconsdir}/HighContrast
 
 %files HighContrast-SVG
 %defattr(644,root,root,755)
-%{_datadir}/icons/HighContrast-SVG
+%{_iconsdir}/HighContrast-SVG
 
 %files HighContrastInverse
 %defattr(644,root,root,755)
-%{_datadir}/icons/HighContrastInverse
 %{_datadir}/themes/HighContrastInverse
+%{_iconsdir}/HighContrastInverse
 
 %files HighContrastLargePrint
 %defattr(644,root,root,755)
-%{_datadir}/icons/HighContrastLargePrint
 %{_datadir}/themes/HighContrastLargePrint
+%{_iconsdir}/HighContrastLargePrint
 
 %files HighContrastLargePrintInverse
 %defattr(644,root,root,755)
-%{_datadir}/icons/HighContrastLargePrintInverse
 %{_datadir}/themes/HighContrastLargePrintInverse
+%{_iconsdir}/HighContrastLargePrintInverse
 
 %files LargePrint
 %defattr(644,root,root,755)
-%{_datadir}/icons/LargePrint
 %{_datadir}/themes/LargePrint
+%{_iconsdir}/LargePrint
 
 %files LowContrast
 %defattr(644,root,root,755)
-%{_datadir}/icons/LowContrast
 %{_datadir}/themes/LowContrast
+%{_iconsdir}/LowContrast
 
 %files LowContrastLargePrint
 %defattr(644,root,root,755)
-%{_datadir}/icons/LowContrastLargePrint
 %{_datadir}/themes/LowContrastLargePrint
+%{_iconsdir}/LowContrastLargePrint
 
 %files Mist
 %defattr(644,root,root,755)
-%{_datadir}/themes/Mist/metacity-1
 %{_datadir}/themes/Mist/index.theme
+%{_datadir}/themes/Mist/metacity-1
+%{_iconsdir}/Mist
