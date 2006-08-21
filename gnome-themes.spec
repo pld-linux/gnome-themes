@@ -4,12 +4,12 @@
 Summary:	Default themes for GNOME enviroment
 Summary(pl.UTF-8):   Domyślne motywy dla środowiska GNOME
 Name:		gnome-themes
-Version:	2.15.91.1
-Release:	2
+Version:	2.15.92
+Release:	1
 License:	LGPL
 Group:		Themes
 Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-themes/2.15/%{name}-%{version}.tar.bz2
-# Source0-md5:	9bbd4dfd2d1e44fa0d1ee3fcadff8f4c
+# Source0-md5:	0c087f9e0f391fc9524b91bfd0270a07
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf >= 2.52
 BuildRequires:	automake
@@ -18,7 +18,7 @@ BuildRequires:	icon-naming-utils >= 0.8.0
 BuildRequires:	intltool >= 0.35
 BuildRequires:	libtool
 BuildRequires:	rpmbuild(macros) >= 1.197
-Requires:	gtk2-engines >= 1:2.7.6
+Requires:	gtk2-engines >= 1:2.7.7
 Conflicts:	crux-engine
 Conflicts:	crux-theme
 Obsoletes:	gnome-themes-Flat-Blue
@@ -44,7 +44,7 @@ Summary:	Clarius theme for GNOME enviroment
 Summary(pl.UTF-8):   Motyw Clarius dla środowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-icon-theme >= 2.15.90
+Requires:	gnome-icon-theme >= %{git_version}
 
 %description Clarius
 Clarius theme for GNOME enviroment.
