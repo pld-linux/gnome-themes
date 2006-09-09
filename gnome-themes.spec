@@ -4,12 +4,12 @@
 Summary:	Default themes for GNOME enviroment
 Summary(pl.UTF-8):   Domyślne motywy dla środowiska GNOME
 Name:		gnome-themes
-Version:	2.15.92
+Version:	2.16.0
 Release:	1
 License:	LGPL
 Group:		Themes
-Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-themes/2.15/%{name}-%{version}.tar.bz2
-# Source0-md5:	0c087f9e0f391fc9524b91bfd0270a07
+Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-themes/2.16/%{name}-%{version}.tar.bz2
+# Source0-md5:	64e44970702ebec39151289d3a1e17c6
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf >= 2.52
 BuildRequires:	automake
@@ -21,6 +21,7 @@ BuildRequires:	rpmbuild(macros) >= 1.197
 Requires:	gtk2-engines >= 1:2.7.7
 Conflicts:	crux-engine
 Conflicts:	crux-theme
+Obsoletes:	gnome-themes-Clarius
 Obsoletes:	gnome-themes-Flat-Blue
 Obsoletes:	gnome-themes-Traditional
 Obsoletes:	gnome-themes-Grand-Canyon
@@ -38,19 +39,6 @@ Default themes for GNOME enviroment.
 
 %description -l pl.UTF-8
 Domyślne motywy dla środowiska GNOME.
-
-%package Clarius
-Summary:	Clarius theme for GNOME enviroment
-Summary(pl.UTF-8):   Motyw Clarius dla środowiska GNOME
-Group:		Themes
-Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-icon-theme >= %{git_version}
-
-%description Clarius
-Clarius theme for GNOME enviroment.
-
-%description Clarius -l pl.UTF-8
-Motyw Clarius dla środowiska GNOME.
 
 %package Clearlooks
 Summary:	Clearlooks theme for GNOME enviroment
@@ -254,10 +242,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-
-%files Clarius
-%defattr(644,root,root,755)
-%{_datadir}/themes/Clarius
 
 %files Clearlooks
 %defattr(644,root,root,755)
