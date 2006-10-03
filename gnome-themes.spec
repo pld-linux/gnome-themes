@@ -1,24 +1,24 @@
 #
-%define		git_version	2.15.91
+%define		git_version	2.16.0.1
 #
 Summary:	Default themes for GNOME enviroment
 Summary(pl.UTF-8):   Domyślne motywy dla środowiska GNOME
 Name:		gnome-themes
-Version:	2.16.0
+Version:	2.16.1
 Release:	1
 License:	LGPL
 Group:		Themes
 Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-themes/2.16/%{name}-%{version}.tar.bz2
-# Source0-md5:	64e44970702ebec39151289d3a1e17c6
+# Source0-md5:	beb116e9c07a4c1ced6d7b6df4f37f1b
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf >= 2.52
 BuildRequires:	automake
-BuildRequires:	gtk2-engines >= 1:2.7.7
-BuildRequires:	icon-naming-utils >= 0.8.0
+BuildRequires:	gtk2-engines >= 1:2.8.1
+BuildRequires:	icon-naming-utils >= 0.8.1
 BuildRequires:	intltool >= 0.35
 BuildRequires:	libtool
 BuildRequires:	rpmbuild(macros) >= 1.197
-Requires:	gtk2-engines >= 1:2.7.7
+Requires:	gtk2-engines >= 1:2.8.1
 Conflicts:	crux-engine
 Conflicts:	crux-theme
 Obsoletes:	gnome-themes-Clarius
@@ -228,7 +228,7 @@ do
 done
 cd $CD
 
-rm -r $RPM_BUILD_ROOT%{_datadir}/locale/ug
+rm -r $RPM_BUILD_ROOT%{_datadir}/locale/{si,ug}
 
 %find_lang %{name}
 
