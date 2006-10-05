@@ -228,8 +228,6 @@ do
 done
 cd $CD
 
-rm -r $RPM_BUILD_ROOT%{_datadir}/locale/{si,ug}
-
 %find_lang %{name}
 
 # all libs are in gtk2-engines now
