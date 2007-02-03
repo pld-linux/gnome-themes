@@ -1,21 +1,21 @@
 #
-%define		git_version	2.16.0.1
+%define		git_version	2.16.1
 #
 Summary:	Default themes for GNOME enviroment
 Summary(pl.UTF-8):   Domyślne motywy dla środowiska GNOME
 Name:		gnome-themes
-Version:	2.16.2
+Version:	2.16.3
 Release:	1
 License:	LGPL
 Group:		Themes
 Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-themes/2.16/%{name}-%{version}.tar.bz2
-# Source0-md5:	671948584cac5fd7458a1c85d5eea9ab
+# Source0-md5:	ecb4d4b9b90507ba4f3d6e9e63d872d5
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf >= 2.52
 BuildRequires:	automake
 BuildRequires:	gtk2-engines >= 1:2.8.2
 BuildRequires:	icon-naming-utils >= 0.8.1
-BuildRequires:	intltool >= 0.35.0
+BuildRequires:	intltool >= 0.35.4
 BuildRequires:	libtool
 BuildRequires:	rpmbuild(macros) >= 1.197
 Requires:	gtk2-engines >= 1:2.8.2
