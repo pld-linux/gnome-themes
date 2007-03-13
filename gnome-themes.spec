@@ -1,24 +1,24 @@
 #
-%define		git_version	2.16.1
+%define		git_version	2.18.0
 #
 Summary:	Default themes for GNOME enviroment
 Summary(pl.UTF-8):	Domyślne motywy dla środowiska GNOME
 Name:		gnome-themes
-Version:	2.16.3
+Version:	2.18.0
 Release:	1
 License:	LGPL
 Group:		Themes
-Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-themes/2.16/%{name}-%{version}.tar.bz2
-# Source0-md5:	ecb4d4b9b90507ba4f3d6e9e63d872d5
+Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-themes/2.18/%{name}-%{version}.tar.bz2
+# Source0-md5:	00c6cad5cd9927c9b532f49c93ea35f7
 URL:		http://www.gnome.org/
-BuildRequires:	autoconf >= 2.52
+BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake
-BuildRequires:	gtk2-engines >= 1:2.8.2
-BuildRequires:	icon-naming-utils >= 0.8.1
-BuildRequires:	intltool >= 0.35.4
+BuildRequires:	gtk2-engines >= 1:2.10.0
+BuildRequires:	icon-naming-utils >= 0.8.2
+BuildRequires:	intltool >= 0.35.5
 BuildRequires:	libtool
 BuildRequires:	rpmbuild(macros) >= 1.197
-Requires:	gtk2-engines >= 1:2.8.2
+Requires:	gtk2-engines >= 1:2.10.0
 Conflicts:	crux-engine
 Conflicts:	crux-theme
 Obsoletes:	gnome-themes-Clarius
@@ -78,6 +78,19 @@ Glider theme for GNOME enviroment.
 
 %description Glider -l pl.UTF-8
 Motyw Glider dla środowiska GNOME.
+
+%package Glossy
+Summary:	Glossy theme for GNOME environment
+Summary(pl.UTF-8):	Motyw Glossy dla środowiska GNOME
+Group:		Themes
+Requires:	%{name} = %{version}-%{release}
+Requires:	gnome-icon-theme >= %{git_version}
+
+%description Glossy
+Glossy theme for GNOME environment.
+
+%description Glossy -l pl.UTF-8
+Motyw Glossy dla środowiska GNOME.
 
 %package HighContrast
 Summary:	HighContrast theme for GNOME enviroment
@@ -253,6 +266,10 @@ rm -rf $RPM_BUILD_ROOT
 %files Glider
 %defattr(644,root,root,755)
 %{_datadir}/themes/Glider
+
+%files Glossy
+%defattr(644,root,root,755)
+%{_datadir}/themes/Glossy
 
 %files HighContrast
 %defattr(644,root,root,755)
