@@ -4,12 +4,12 @@
 Summary:	Default themes for GNOME enviroment
 Summary(pl.UTF-8):	Domyślne motywy dla środowiska GNOME
 Name:		gnome-themes
-Version:	2.18.0
+Version:	2.18.1
 Release:	1
 License:	LGPL
 Group:		Themes
 Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-themes/2.18/%{name}-%{version}.tar.bz2
-# Source0-md5:	00c6cad5cd9927c9b532f49c93ea35f7
+# Source0-md5:	caa1683da286eeeb0f4f7ec8b0cc34bb
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake
