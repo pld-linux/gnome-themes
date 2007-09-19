@@ -1,24 +1,24 @@
 #
-%define		git_version	2.18.0
+%define		git_version	2.19.91
 #
 Summary:	Default themes for GNOME enviroment
 Summary(pl.UTF-8):	Domyślne motywy dla środowiska GNOME
 Name:		gnome-themes
-Version:	2.18.1
+Version:	2.20.0
 Release:	1
 License:	LGPL
 Group:		Themes
-Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-themes/2.18/%{name}-%{version}.tar.bz2
-# Source0-md5:	caa1683da286eeeb0f4f7ec8b0cc34bb
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-themes/2.20/%{name}-%{version}.tar.bz2
+# Source0-md5:	862b436d77ff4dcf14849524d33c296c
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake
-BuildRequires:	gtk2-engines >= 1:2.10.0
+BuildRequires:	gtk2-engines >= 1:2.12.0
 BuildRequires:	icon-naming-utils >= 0.8.2
-BuildRequires:	intltool >= 0.35.5
+BuildRequires:	intltool >= 0.36.1
 BuildRequires:	libtool
 BuildRequires:	rpmbuild(macros) >= 1.197
-Requires:	gtk2-engines >= 1:2.10.0
+Requires:	gtk2-engines >= 1:2.12.0
 Conflicts:	crux-engine
 Conflicts:	crux-theme
 Obsoletes:	gnome-themes-Clarius
@@ -52,6 +52,19 @@ Clearlooks theme for GNOME enviroment.
 
 %description Clearlooks -l pl.UTF-8
 Motyw Clearlooks dla środowiska GNOME.
+
+%package ClearlooksClassic
+Summary:	ClearlooksClassic theme for GNOME enviroment
+Summary(pl.UTF-8):	Motyw ClearlooksClassic dla środowiska GNOME
+Group:		Themes
+Requires:	%{name} = %{version}-%{release}
+Requires:	gnome-icon-theme >= %{git_version}
+
+%description ClearlooksClassic
+ClearlooksClassic theme for GNOME enviroment.
+
+%description ClearlooksClassic -l pl.UTF-8
+Motyw ClearlooksClassic dla środowiska GNOME.
 
 %package Crux
 Summary:	Crux theme for GNOME enviroment
@@ -160,6 +173,19 @@ HighContrastLargePrintInverse theme for GNOME enviroment.
 %description HighContrastLargePrintInverse -l pl.UTF-8
 Motyw HighContrastLargePrintInverse dla środowiska GNOME.
 
+%package Inverted
+Summary:	Inverted theme for GNOME enviroment
+Summary(pl.UTF-8):	Motyw Inverted dla środowiska GNOME
+Group:		Themes
+Requires:	%{name} = %{version}-%{release}
+Requires:	gnome-icon-theme >= %{git_version}
+
+%description Inverted
+Inverted theme for GNOME enviroment.
+
+%description Inverted -l pl.UTF-8
+Motyw Inverted dla środowiska GNOME.
+
 %package LargePrint
 Summary:	LargePrint theme for GNOME enviroment
 Summary(pl.UTF-8):	Motyw LargePrint dla środowiska GNOME
@@ -258,6 +284,10 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %{_datadir}/themes/Clearlooks/*
 
+%files ClearlooksClassic
+%defattr(644,root,root,755)
+%{_datadir}/themes/ClearlooksClassic
+
 %files Crux
 %defattr(644,root,root,755)
 %{_datadir}/themes/Crux/index.theme
@@ -294,6 +324,10 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %{_datadir}/themes/HighContrastLargePrintInverse
 %{_iconsdir}/HighContrastLargePrintInverse
+
+%files Inverted
+%defattr(644,root,root,755)
+%{_datadir}/themes/Inverted
 
 %files LargePrint
 %defattr(644,root,root,755)
