@@ -1,11 +1,11 @@
 #
 %define		git_version	2.19.91
 #
-Summary:	Default themes for GNOME enviroment
+Summary:	Default themes for GNOME environment
 Summary(pl.UTF-8):	Domyślne motywy dla środowiska GNOME
 Name:		gnome-themes
 Version:	2.20.0
-Release:	1
+Release:	2
 License:	LGPL
 Group:		Themes
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-themes/2.20/%{name}-%{version}.tar.bz2
@@ -35,59 +35,59 @@ Obsoletes:	gnome-themes-Smokey-Red
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Default themes for GNOME enviroment.
+Default themes for GNOME environment.
 
 %description -l pl.UTF-8
 Domyślne motywy dla środowiska GNOME.
 
 %package Clearlooks
-Summary:	Clearlooks theme for GNOME enviroment
+Summary:	Clearlooks theme for GNOME environment
 Summary(pl.UTF-8):	Motyw Clearlooks dla środowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
 Requires:	gnome-icon-theme >= %{git_version}
 
 %description Clearlooks
-Clearlooks theme for GNOME enviroment.
+Clearlooks theme for GNOME environment.
 
 %description Clearlooks -l pl.UTF-8
 Motyw Clearlooks dla środowiska GNOME.
 
 %package ClearlooksClassic
-Summary:	ClearlooksClassic theme for GNOME enviroment
+Summary:	ClearlooksClassic theme for GNOME environment
 Summary(pl.UTF-8):	Motyw ClearlooksClassic dla środowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
 Requires:	gnome-icon-theme >= %{git_version}
 
 %description ClearlooksClassic
-ClearlooksClassic theme for GNOME enviroment.
+ClearlooksClassic theme for GNOME environment.
 
 %description ClearlooksClassic -l pl.UTF-8
 Motyw ClearlooksClassic dla środowiska GNOME.
 
 %package Crux
-Summary:	Crux theme for GNOME enviroment
+Summary:	Crux theme for GNOME environment
 Summary(pl.UTF-8):	Motyw Crux dla środowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
 Requires:	gnome-icon-theme >= %{git_version}
 
 %description Crux
-Crux theme for GNOME enviroment.
+Crux theme for GNOME environment.
 
 %description Crux -l pl.UTF-8
 Motyw Crux dla środowiska GNOME.
 
 %package Glider
-Summary:	Glider theme for GNOME enviroment
+Summary:	Glider theme for GNOME environment
 Summary(pl.UTF-8):	Motyw Glider dla środowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
 Requires:	gnome-icon-theme >= %{git_version}
 
 %description Glider
-Glider theme for GNOME enviroment.
+Glider theme for GNOME environment.
 
 %description Glider -l pl.UTF-8
 Motyw Glider dla środowiska GNOME.
@@ -106,7 +106,7 @@ Glossy theme for GNOME environment.
 Motyw Glossy dla środowiska GNOME.
 
 %package HighContrast
-Summary:	HighContrast theme for GNOME enviroment
+Summary:	HighContrast theme for GNOME environment
 Summary(pl.UTF-8):	Motyw HighContrast dla środowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
@@ -114,26 +114,26 @@ Requires:	%{name}-HighContrastLargePrint = %{version}-%{release}
 Requires:	gnome-icon-theme >= %{git_version}
 
 %description HighContrast
-HighContrast theme for GNOME enviroment.
+HighContrast theme for GNOME environment.
 
 %description HighContrast -l pl.UTF-8
 Motyw HighContrast dla środowiska GNOME.
 
 %package HighContrast-SVG
-Summary:	HighContrast SVG theme for GNOME enviroment
+Summary:	HighContrast SVG theme for GNOME environment
 Summary(pl.UTF-8):	Motyw HighContrast SVG dla środowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
 Requires:	gnome-icon-theme >= %{git_version}
 
 %description HighContrast-SVG
-HighContrast theme for GNOME enviroment (svg version).
+HighContrast theme for GNOME environment (svg version).
 
 %description HighContrast-SVG -l pl.UTF-8
 Motyw HighContrast dla środowiska GNOME (wersja SVG).
 
 %package HighContrastInverse
-Summary:	HighContrastInverse theme for GNOME enviroment
+Summary:	HighContrastInverse theme for GNOME environment
 Summary(pl.UTF-8):	Motyw HighContrastInverse dla środowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
@@ -141,13 +141,13 @@ Requires:	%{name}-HighContrastLargePrintInverse = %{version}-%{release}
 Requires:	gnome-icon-theme >= %{git_version}
 
 %description HighContrastInverse
-HighContrastInverse theme for GNOME enviroment.
+HighContrastInverse theme for GNOME environment.
 
 %description HighContrastInverse -l pl.UTF-8
 Motyw HighContrastInverse dla środowiska GNOME.
 
 %package HighContrastLargePrint
-Summary:	HighContrastLargePrint theme for GNOME enviroment
+Summary:	HighContrastLargePrint theme for GNOME environment
 Summary(pl.UTF-8):	Motyw HighContrastLargePrint dla środowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
@@ -155,52 +155,52 @@ Requires:	%{name}-HighContrast = %{version}-%{release}
 Requires:	gnome-icon-theme >= %{git_version}
 
 %description HighContrastLargePrint
-HighContrastLargePrint theme for GNOME enviroment.
+HighContrastLargePrint theme for GNOME environment.
 
 %description HighContrastLargePrint -l pl.UTF-8
 Motyw HighContrastLargePrint dla środowiska GNOME.
 
 %package HighContrastLargePrintInverse
-Summary:	HighContrastLargePrintInverse theme for GNOME enviroment
+Summary:	HighContrastLargePrintInverse theme for GNOME environment
 Summary(pl.UTF-8):	Motyw HighContrastLargePrintInverse dla środowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
 Requires:	gnome-icon-theme >= %{git_version}
 
 %description HighContrastLargePrintInverse
-HighContrastLargePrintInverse theme for GNOME enviroment.
+HighContrastLargePrintInverse theme for GNOME environment.
 
 %description HighContrastLargePrintInverse -l pl.UTF-8
 Motyw HighContrastLargePrintInverse dla środowiska GNOME.
 
 %package Inverted
-Summary:	Inverted theme for GNOME enviroment
+Summary:	Inverted theme for GNOME environment
 Summary(pl.UTF-8):	Motyw Inverted dla środowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
 Requires:	gnome-icon-theme >= %{git_version}
 
 %description Inverted
-Inverted theme for GNOME enviroment.
+Inverted theme for GNOME environment.
 
 %description Inverted -l pl.UTF-8
 Motyw Inverted dla środowiska GNOME.
 
 %package LargePrint
-Summary:	LargePrint theme for GNOME enviroment
+Summary:	LargePrint theme for GNOME environment
 Summary(pl.UTF-8):	Motyw LargePrint dla środowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
 Requires:	gnome-icon-theme >= %{git_version}
 
 %description LargePrint
-LargePrint theme for GNOME enviroment.
+LargePrint theme for GNOME environment.
 
 %description LargePrint -l pl.UTF-8
 Motyw LargePrint dla środowiska GNOME.
 
 %package LowContrast
-Summary:	LowContrast theme for GNOME enviroment
+Summary:	LowContrast theme for GNOME environment
 Summary(pl.UTF-8):	Motyw LowContrast dla środowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
@@ -208,32 +208,32 @@ Requires:	%{name}-LowContrastLargePrint = %{version}-%{release}
 Requires:	gnome-icon-theme >= %{git_version}
 
 %description LowContrast
-LowContrast theme for GNOME enviroment.
+LowContrast theme for GNOME environment.
 
 %description LowContrast -l pl.UTF-8
 Motyw LowContrast dla środowiska GNOME.
 
 %package LowContrastLargePrint
-Summary:	LowContrastLargePrint theme for GNOME enviroment
+Summary:	LowContrastLargePrint theme for GNOME environment
 Summary(pl.UTF-8):	Motyw LowContrastLargePrint dla środowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
 Requires:	gnome-icon-theme >= %{git_version}
 
 %description LowContrastLargePrint
-LowContrastLargePrint theme for GNOME enviroment.
+LowContrastLargePrint theme for GNOME environment.
 
 %description LowContrastLargePrint -l pl.UTF-8
 Motyw LowContrastLargePrint dla środowiska GNOME.
 
 %package Mist
-Summary:	Mist theme for GNOME enviroment
+Summary:	Mist theme for GNOME environment
 Summary(pl.UTF-8):	Motyw Mist dla środowiska GNOME
 Group:		Themes
 Requires:	%{name} = %{version}-%{release}
 
 %description Mist
-Mist theme for GNOME enviroment.
+Mist theme for GNOME environment.
 
 %description Mist -l pl.UTF-8
 Motyw Mist dla środowiska GNOME.
