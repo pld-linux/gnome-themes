@@ -5,7 +5,7 @@ Summary:	Default themes for GNOME environment
 Summary(pl.UTF-8):	Domyślne motywy dla środowiska GNOME
 Name:		gnome-themes
 Version:	2.20.1
-Release:	1
+Release:	2
 License:	LGPL
 Group:		Themes
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-themes/2.20/%{name}-%{version}.tar.bz2
@@ -32,6 +32,8 @@ Obsoletes:	gnome-themes-Simple
 Obsoletes:	gnome-themes-Smokey
 Obsoletes:	gnome-themes-Smokey-Blue
 Obsoletes:	gnome-themes-Smokey-Red
+# sr@Latn vs. sr@latin
+Conflicts:	glibc-misc < 6:2.7
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -267,6 +269,8 @@ do
 done
 cd $CD
 
+[ -d $RPM_BUILD_ROOT%{_datadir}/locale/sr@latin ] || \
+	mv -f $RPM_BUILD_ROOT%{_datadir}/locale/sr@{Latn,latin}
 %find_lang %{name}
 
 # all libs are in gtk2-engines now
