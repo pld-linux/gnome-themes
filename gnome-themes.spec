@@ -4,12 +4,12 @@
 Summary:	Default themes for GNOME environment
 Summary(pl.UTF-8):	Domyślne motywy dla środowiska GNOME
 Name:		gnome-themes
-Version:	2.20.1
-Release:	2
+Version:	2.20.2
+Release:	1
 License:	LGPL
 Group:		Themes
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-themes/2.20/%{name}-%{version}.tar.bz2
-# Source0-md5:	85d07ae96c7b2f78888750fd88aeb98e
+# Source0-md5:	52d018251ef8164deaf9343cbfb7af16
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake
@@ -18,6 +18,7 @@ BuildRequires:	icon-naming-utils >= 0.8.2
 BuildRequires:	intltool >= 0.36.1
 BuildRequires:	libtool
 BuildRequires:	rpmbuild(macros) >= 1.197
+BuildRequires:	sed >= 4.0
 Requires:	gtk2-engines >= 1:2.12.0
 Conflicts:	crux-engine
 Conflicts:	crux-theme
@@ -243,6 +244,9 @@ Motyw Mist dla środowiska GNOME.
 %prep
 %setup -q
 
+sed -i -e s#sr\@Latn#sr\@latin# po/LINGUAS
+mv po/sr\@{Latn,latin}.po
+
 %build
 %{__glib_gettextize}
 %{__intltoolize}
@@ -269,8 +273,6 @@ do
 done
 cd $CD
 
-[ -d $RPM_BUILD_ROOT%{_datadir}/locale/sr@latin ] || \
-	mv -f $RPM_BUILD_ROOT%{_datadir}/locale/sr@{Latn,latin}
 %find_lang %{name}
 
 # all libs are in gtk2-engines now
