@@ -1,15 +1,15 @@
 #
-%define		git_version	2.20.0
+%define		git_version	2.21.4
 #
 Summary:	Default themes for GNOME environment
 Summary(pl.UTF-8):	Domyślne motywy dla środowiska GNOME
 Name:		gnome-themes
-Version:	2.20.2
+Version:	2.21.2
 Release:	1
 License:	LGPL
 Group:		Themes
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-themes/2.20/%{name}-%{version}.tar.bz2
-# Source0-md5:	52d018251ef8164deaf9343cbfb7af16
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-themes/2.21/%{name}-%{version}.tar.bz2
+# Source0-md5:	41f09651245e0ed0c2e7b7c1882249d6
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake
