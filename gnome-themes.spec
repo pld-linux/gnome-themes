@@ -4,12 +4,12 @@
 Summary:	Default themes for GNOME environment
 Summary(pl.UTF-8):	Domyślne motywy dla środowiska GNOME
 Name:		gnome-themes
-Version:	2.21.2
+Version:	2.21.5
 Release:	1
 License:	LGPL
 Group:		Themes
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-themes/2.21/%{name}-%{version}.tar.bz2
-# Source0-md5:	41f09651245e0ed0c2e7b7c1882249d6
+# Source0-md5:	203b9e96ddbe6a1893e997d01010212e
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake
@@ -343,12 +343,10 @@ rm -rf $RPM_BUILD_ROOT
 %files LowContrast
 %defattr(644,root,root,755)
 %{_datadir}/themes/LowContrast
-%{_iconsdir}/LowContrast
 
 %files LowContrastLargePrint
 %defattr(644,root,root,755)
 %{_datadir}/themes/LowContrastLargePrint
-%{_iconsdir}/LowContrastLargePrint
 
 %files Mist
 %defattr(644,root,root,755)
