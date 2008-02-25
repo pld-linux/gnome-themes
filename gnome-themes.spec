@@ -1,25 +1,25 @@
 #
-%define		git_version	2.21.4
+%define		git_version	2.21.92
 #
 Summary:	Default themes for GNOME environment
 Summary(pl.UTF-8):	Domyślne motywy dla środowiska GNOME
 Name:		gnome-themes
-Version:	2.21.5
+Version:	2.21.92
 Release:	1
 License:	LGPL
 Group:		Themes
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-themes/2.21/%{name}-%{version}.tar.bz2
-# Source0-md5:	203b9e96ddbe6a1893e997d01010212e
+# Source0-md5:	956f342179883c23350b28df714cb9f7
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf >= 2.53
-BuildRequires:	automake
-BuildRequires:	gtk2-engines >= 1:2.12.0
+BuildRequires:	automake >= 1:1.9
+BuildRequires:	gtk2-engines >= 1:2.13.5
 BuildRequires:	icon-naming-utils >= 0.8.2
 BuildRequires:	intltool >= 0.36.1
 BuildRequires:	libtool
 BuildRequires:	rpmbuild(macros) >= 1.197
 BuildRequires:	sed >= 4.0
-Requires:	gtk2-engines >= 1:2.12.0
+Requires:	gtk2-engines >= 1:2.13.5
 Conflicts:	crux-engine
 Conflicts:	crux-theme
 Obsoletes:	gnome-themes-Clarius
@@ -244,8 +244,8 @@ Motyw Mist dla środowiska GNOME.
 %prep
 %setup -q
 
-sed -i -e s#sr\@Latn#sr\@latin# po/LINGUAS
-mv po/sr\@{Latn,latin}.po
+sed -i -e 's#sr@Latn#sr@latin#' po/LINGUAS
+mv po/sr@{Latn,latin}.po
 
 %build
 %{__glib_gettextize}
