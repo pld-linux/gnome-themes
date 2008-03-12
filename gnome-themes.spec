@@ -1,25 +1,25 @@
 #
-%define		git_version	2.20.0
+%define		git_version	2.22.0
 #
 Summary:	Default themes for GNOME environment
 Summary(pl.UTF-8):	Domyślne motywy dla środowiska GNOME
 Name:		gnome-themes
-Version:	2.20.2
+Version:	2.22.0
 Release:	1
 License:	LGPL
 Group:		Themes
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-themes/2.20/%{name}-%{version}.tar.bz2
-# Source0-md5:	52d018251ef8164deaf9343cbfb7af16
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-themes/2.22/%{name}-%{version}.tar.bz2
+# Source0-md5:	e902194175c6f7298bd53e5aa7eef56b
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf >= 2.53
-BuildRequires:	automake
-BuildRequires:	gtk2-engines >= 1:2.12.0
+BuildRequires:	automake >= 1:1.9
+BuildRequires:	gtk2-engines >= 1:2.14.0
 BuildRequires:	icon-naming-utils >= 0.8.2
 BuildRequires:	intltool >= 0.36.1
 BuildRequires:	libtool
 BuildRequires:	rpmbuild(macros) >= 1.197
 BuildRequires:	sed >= 4.0
-Requires:	gtk2-engines >= 1:2.12.0
+Requires:	gtk2-engines >= 1:2.14.0
 Conflicts:	crux-engine
 Conflicts:	crux-theme
 Obsoletes:	gnome-themes-Clarius
@@ -244,8 +244,8 @@ Motyw Mist dla środowiska GNOME.
 %prep
 %setup -q
 
-sed -i -e s#sr\@Latn#sr\@latin# po/LINGUAS
-mv po/sr\@{Latn,latin}.po
+sed -i -e 's#sr@Latn#sr@latin#' po/LINGUAS
+mv po/sr@{Latn,latin}.po
 
 %build
 %{__glib_gettextize}
@@ -343,12 +343,10 @@ rm -rf $RPM_BUILD_ROOT
 %files LowContrast
 %defattr(644,root,root,755)
 %{_datadir}/themes/LowContrast
-%{_iconsdir}/LowContrast
 
 %files LowContrastLargePrint
 %defattr(644,root,root,755)
 %{_datadir}/themes/LowContrastLargePrint
-%{_iconsdir}/LowContrastLargePrint
 
 %files Mist
 %defattr(644,root,root,755)
