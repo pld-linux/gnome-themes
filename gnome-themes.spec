@@ -1,25 +1,25 @@
 #
-%define		git_version	2.21.92
+%define		git_version	2.22.0
 #
 Summary:	Default themes for GNOME environment
 Summary(pl.UTF-8):	Domyślne motywy dla środowiska GNOME
 Name:		gnome-themes
-Version:	2.21.92
+Version:	2.22.0
 Release:	1
 License:	LGPL
 Group:		Themes
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-themes/2.21/%{name}-%{version}.tar.bz2
-# Source0-md5:	956f342179883c23350b28df714cb9f7
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-themes/2.22/%{name}-%{version}.tar.bz2
+# Source0-md5:	e902194175c6f7298bd53e5aa7eef56b
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake >= 1:1.9
-BuildRequires:	gtk2-engines >= 1:2.13.5
+BuildRequires:	gtk2-engines >= 1:2.14.0
 BuildRequires:	icon-naming-utils >= 0.8.2
 BuildRequires:	intltool >= 0.36.1
 BuildRequires:	libtool
 BuildRequires:	rpmbuild(macros) >= 1.197
 BuildRequires:	sed >= 4.0
-Requires:	gtk2-engines >= 1:2.13.5
+Requires:	gtk2-engines >= 1:2.14.0
 Conflicts:	crux-engine
 Conflicts:	crux-theme
 Obsoletes:	gnome-themes-Clarius
