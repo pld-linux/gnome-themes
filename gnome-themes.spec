@@ -4,16 +4,18 @@
 Summary:	Default themes for GNOME environment
 Summary(pl.UTF-8):	Domyślne motywy dla środowiska GNOME
 Name:		gnome-themes
-Version:	2.22.2
+Version:	2.24.0
 Release:	1
 License:	LGPL
 Group:		Themes
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-themes/2.22/%{name}-%{version}.tar.bz2
-# Source0-md5:	1989167d700e835fe57993c6be90434c
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-themes/2.24/%{name}-%{version}.tar.bz2
+# Source0-md5:	0dd3fc0d034d7f51379ea6f335d1d257
+# http://bugzilla.gnome.org/show_bug.cgi?id=552052
+Patch0:		%{name}-bashizm.patch
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake >= 1:1.9
-BuildRequires:	gtk2-engines >= 1:2.14.0
+BuildRequires:	gtk2-engines >= 1:2.15.3
 BuildRequires:	icon-naming-utils >= 0.8.2
 BuildRequires:	intltool >= 0.36.1
 BuildRequires:	libtool
@@ -243,9 +245,7 @@ Motyw Mist dla środowiska GNOME.
 
 %prep
 %setup -q
-
-sed -i -e 's#sr@Latn#sr@latin#' po/LINGUAS
-mv po/sr@{Latn,latin}.po
+%patch0 -p1
 
 %build
 %{__glib_gettextize}
