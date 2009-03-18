@@ -1,15 +1,15 @@
 #
-%define		git_version	2.22.0
+%define		git_version	2.26.0
 #
 Summary:	Default themes for GNOME environment
 Summary(pl.UTF-8):	Domyślne motywy dla środowiska GNOME
 Name:		gnome-themes
-Version:	2.24.3
+Version:	2.26.0
 Release:	1
 License:	LGPL
 Group:		Themes
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-themes/2.24/%{name}-%{version}.tar.bz2
-# Source0-md5:	c986db988da6ca6dcf1032c1c9736e29
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-themes/2.26/%{name}-%{version}.tar.bz2
+# Source0-md5:	3f841154544867585504153d57df1fda
 # http://bugzilla.gnome.org/show_bug.cgi?id=552052
 Patch0:		%{name}-bashizm.patch
 URL:		http://www.gnome.org/
@@ -285,10 +285,12 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
+%{_datadir}/themes/Simple
 
 %files Clearlooks
 %defattr(644,root,root,755)
 %{_datadir}/themes/Clearlooks/*
+%{_datadir}/themes/ClearlooksTest
 
 %files ClearlooksClassic
 %defattr(644,root,root,755)
