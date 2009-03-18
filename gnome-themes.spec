@@ -5,7 +5,7 @@ Summary:	Default themes for GNOME environment
 Summary(pl.UTF-8):	Domyślne motywy dla środowiska GNOME
 Name:		gnome-themes
 Version:	2.26.0
-Release:	1
+Release:	2
 License:	LGPL
 Group:		Themes
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-themes/2.26/%{name}-%{version}.tar.bz2
@@ -290,7 +290,6 @@ rm -rf $RPM_BUILD_ROOT
 %files Clearlooks
 %defattr(644,root,root,755)
 %{_datadir}/themes/Clearlooks/*
-%{_datadir}/themes/ClearlooksTest
 
 %files ClearlooksClassic
 %defattr(644,root,root,755)
