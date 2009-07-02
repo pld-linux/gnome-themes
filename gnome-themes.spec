@@ -4,15 +4,14 @@
 Summary:	Default themes for GNOME environment
 Summary(pl.UTF-8):	Domyślne motywy dla środowiska GNOME
 Name:		gnome-themes
-Version:	2.26.2
-Release:	2
+Version:	2.26.3.1
+Release:	1
 License:	LGPL
 Group:		Themes
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-themes/2.26/%{name}-%{version}.tar.bz2
-# Source0-md5:	ffc7037085f1ae898be45fe699ea13ad
+# Source0-md5:	2b9fbbf9911098b9eb061c05f175940a
 # http://bugzilla.gnome.org/show_bug.cgi?id=552052
 Patch0:		%{name}-bashizm.patch
-Patch1:		%{name}-install.patch
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake >= 1:1.9
@@ -247,7 +246,6 @@ Motyw Mist dla środowiska GNOME.
 %prep
 %setup -q
 %patch0 -p1
-%patch1 -p1
 
 %build
 %{__glib_gettextize}
@@ -265,6 +263,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
+
+rm -rf $RPM_BUILD_ROOT%{_datadir}/locale/ca@valencia
 
 CD=`pwd`
 cd $RPM_BUILD_ROOT%{_iconsdir}
