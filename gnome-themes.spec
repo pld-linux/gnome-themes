@@ -4,12 +4,12 @@
 Summary:	Default themes for GNOME environment
 Summary(pl.UTF-8):	Domyślne motywy dla środowiska GNOME
 Name:		gnome-themes
-Version:	2.26.3.1
+Version:	2.27.4
 Release:	1
 License:	LGPL
 Group:		Themes
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-themes/2.26/%{name}-%{version}.tar.bz2
-# Source0-md5:	2b9fbbf9911098b9eb061c05f175940a
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-themes/2.27/%{name}-%{version}.tar.bz2
+# Source0-md5:	05b17f77d7c9837260637e59148574d0
 # http://bugzilla.gnome.org/show_bug.cgi?id=552052
 Patch0:		%{name}-bashizm.patch
 URL:		http://www.gnome.org/
