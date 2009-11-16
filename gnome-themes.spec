@@ -15,10 +15,16 @@ Patch0:		%{name}-bashizm.patch
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake >= 1:1.9
+BuildRequires:	gettext-devel
+BuildRequires:	glib2-devel
 BuildRequires:	gtk2-engines >= 1:2.18.0
+# gtk+2-devel is needed by .pc from gtk2-engines, so it should
+# be R: in gtk2-engines-devel which doesn't exist
+BuildRequires:	gtk+2-devel
 BuildRequires:	icon-naming-utils >= 0.8.2
 BuildRequires:	intltool >= 0.36.1
 BuildRequires:	libtool
+BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(macros) >= 1.197
 BuildRequires:	sed >= 4.0
 Requires:	gtk2-engines >= 1:2.18.0
