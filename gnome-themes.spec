@@ -1,15 +1,15 @@
 #
-%define		git_version	2.28.0
+%define		git_version	2.30.0
 #
 Summary:	Default themes for GNOME environment
 Summary(pl.UTF-8):	Domyślne motywy dla środowiska GNOME
 Name:		gnome-themes
-Version:	2.30.0
+Version:	2.30.1
 Release:	1
 License:	LGPL
 Group:		Themes
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-themes/2.30/%{name}-%{version}.tar.bz2
-# Source0-md5:	9515789b64e6674a7d7d9ffc5b1d91f5
+# Source0-md5:	89828bdb7f50b540e4d90154760638b3
 # http://bugzilla.gnome.org/show_bug.cgi?id=552052
 Patch0:		%{name}-bashizm.patch
 URL:		http://www.gnome.org/
