@@ -4,12 +4,12 @@
 Summary:	Default themes for GNOME environment
 Summary(pl.UTF-8):	Domyślne motywy dla środowiska GNOME
 Name:		gnome-themes
-Version:	2.30.1
+Version:	2.30.2
 Release:	1
 License:	LGPL
 Group:		Themes
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-themes/2.30/%{name}-%{version}.tar.bz2
-# Source0-md5:	89828bdb7f50b540e4d90154760638b3
+# Source0-md5:	a14d46ac59f651e04a333ae1dff23848
 # http://bugzilla.gnome.org/show_bug.cgi?id=552052
 Patch0:		%{name}-bashizm.patch
 URL:		http://www.gnome.org/
