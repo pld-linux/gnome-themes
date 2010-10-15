@@ -5,7 +5,7 @@ Summary:	Default themes for GNOME environment
 Summary(pl.UTF-8):	Domyślne motywy dla środowiska GNOME
 Name:		gnome-themes
 Version:	2.32.0
-Release:	1
+Release:	2
 License:	LGPL
 Group:		Themes
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-themes/2.32/%{name}-%{version}.tar.bz2
@@ -27,7 +27,7 @@ BuildRequires:	libtool
 BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(macros) >= 1.197
 BuildRequires:	sed >= 4.0
-Requires:	gtk2-engines >= 1:2.18.0
+Requires:	gtk2-engines-themes
 Conflicts:	crux-engine
 Conflicts:	crux-theme
 Obsoletes:	gnome-themes-Clarius
