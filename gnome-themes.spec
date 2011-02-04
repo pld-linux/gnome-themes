@@ -5,7 +5,7 @@ Summary:	Default themes for GNOME environment
 Summary(pl.UTF-8):	Domyślne motywy dla środowiska GNOME
 Name:		gnome-themes
 Version:	2.32.1
-Release:	1
+Release:	2
 License:	LGPL
 Group:		Themes
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-themes/2.32/%{name}-%{version}.tar.bz2
@@ -17,6 +17,7 @@ BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake >= 1:1.9
 BuildRequires:	gettext-devel
 BuildRequires:	glib2-devel
+BuildRequires:	gtk-update-icon-cache
 BuildRequires:	gtk2-engines >= 1:2.18.0
 # gtk+2-devel is needed by .pc from gtk2-engines, so it should
 # be R: in gtk2-engines-devel which doesn't exist
@@ -28,11 +29,8 @@ BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(macros) >= 1.197
 BuildRequires:	sed >= 4.0
 Requires:	gtk2-engines-themes
-Conflicts:	crux-engine
-Conflicts:	crux-theme
 Obsoletes:	gnome-themes-Clarius
 Obsoletes:	gnome-themes-Flat-Blue
-Obsoletes:	gnome-themes-Traditional
 Obsoletes:	gnome-themes-Grand-Canyon
 Obsoletes:	gnome-themes-Ocean-Dream
 Obsoletes:	gnome-themes-Sandwish
@@ -41,6 +39,9 @@ Obsoletes:	gnome-themes-Simple
 Obsoletes:	gnome-themes-Smokey
 Obsoletes:	gnome-themes-Smokey-Blue
 Obsoletes:	gnome-themes-Smokey-Red
+Obsoletes:	gnome-themes-Traditional
+Conflicts:	crux-engine
+Conflicts:	crux-theme
 # sr@Latn vs. sr@latin
 Conflicts:	glibc-misc < 6:2.7
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
