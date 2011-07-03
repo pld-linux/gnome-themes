@@ -253,8 +253,6 @@ Motyw Mist dla środowiska GNOME.
 %prep
 %setup -q
 %patch0 -p1
-sed -i s#^en@shaw## po/LINGUAS
-rm po/en@shaw.po
 
 %build
 %{__glib_gettextize}
@@ -282,11 +280,6 @@ done
 cd $CD
 
 %find_lang %{name}
-
-# all libs are in gtk2-engines now
-rm -rf $RPM_BUILD_ROOT%{_libdir}
-# eazel-engine is in gtk2-engines too
-rm -rf $RPM_BUILD_ROOT%{_datadir}/eazel-engine
 
 %clean
 rm -rf $RPM_BUILD_ROOT
