@@ -5,7 +5,7 @@ Summary:	Default themes for GNOME environment
 Summary(pl.UTF-8):	Domyślne motywy dla środowiska GNOME
 Name:		gnome-themes
 Version:	3.0.0
-Release:	0.1
+Release:	1
 License:	LGPL
 Group:		Themes
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-themes/3.0/%{name}-%{version}.tar.bz2
