@@ -19,16 +19,13 @@ BuildRequires:	gettext-devel
 BuildRequires:	glib2-devel
 BuildRequires:	gtk-update-icon-cache
 BuildRequires:	gtk3-engines >= 2.90.0
-# gtk+2-devel is needed by .pc from gtk2-engines, so it should
-# be R: in gtk2-engines-devel which doesn't exist
-BuildRequires:	gtk+2-devel
 BuildRequires:	icon-naming-utils >= 0.8.2
 BuildRequires:	intltool >= 0.36.1
 BuildRequires:	libtool
 BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(macros) >= 1.197
 BuildRequires:	sed >= 4.0
-Requires:	gtk2-engines-themes
+Requires:	gtk3-engines-themes
 Obsoletes:	gnome-themes-Clarius
 Obsoletes:	gnome-themes-Flat-Blue
 Obsoletes:	gnome-themes-Grand-Canyon
