@@ -18,7 +18,7 @@ BuildRequires:	automake >= 1:1.9
 BuildRequires:	gettext-devel
 BuildRequires:	glib2-devel
 BuildRequires:	gtk-update-icon-cache
-BuildRequires:	gtk2-engines >= 1:2.18.0
+BuildRequires:	gtk3-engines >= 2.90.0
 # gtk+2-devel is needed by .pc from gtk2-engines, so it should
 # be R: in gtk2-engines-devel which doesn't exist
 BuildRequires:	gtk+2-devel
