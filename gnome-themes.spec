@@ -15,7 +15,7 @@ Patch0:		%{name}-bashizm.patch
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake >= 1:1.9
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	glib2-devel
 BuildRequires:	gtk-update-icon-cache
 BuildRequires:	gtk3-engines >= 2.90.0
