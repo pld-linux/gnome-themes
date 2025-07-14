@@ -249,7 +249,7 @@ Motyw Mist dla środowiska GNOME.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 %{__glib_gettextize}
